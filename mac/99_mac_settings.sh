@@ -1,4 +1,5 @@
-echo "Applying macOS settings..."
+echo " -------------------- Applying macOS settings... -----------------------"
+
 #Faster Expose
 defaults write com.apple.dock expose-animation-duration -float 0.20;
 #Set a blazingly fast keyboard repeat rate
@@ -16,3 +17,4 @@ chflags nohidden ~/Library
 #defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 echo "Reboot to apply KeyRepeat settings."
+echo " ------------------ DONE Applying macOS settings... --------------------"

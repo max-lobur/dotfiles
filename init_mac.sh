@@ -1,10 +1,10 @@
 # Init script for a main machine (Mac)
 
 echo " --------------------------- INIT --------------------------- "
-ln -s $(pwd)/dotfiles/.* ~/
+ln -sf $(pwd)/dotfiles/.* ~/
 
 for f in $(ls ./mac/); do
-    bash ./mac/$f
+    bash ./mac/"$f"
 done
 
 bash ./common/packages_pip.sh

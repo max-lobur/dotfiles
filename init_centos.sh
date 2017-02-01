@@ -1,10 +1,10 @@
 # Init script for a secondary machine (centos)
 
 echo " --------------------------- INIT --------------------------- "
-ln -s $(pwd)/dotfiles/.* ~/
+ln -sf $(pwd)/dotfiles/.* ~/
 
 for f in $(ls ./centos/); do
-    bash ./centos/$f
+    bash ./centos/"$f"
 done
 
 bash ./common/packages_pip.sh

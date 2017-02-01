@@ -6,8 +6,8 @@ chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 
 for k in $(./common/pubkeys) do;
-  cat $k >> ~/.ssh/authorized_keys
-done;
+  cat ./common/pubkeys/$k >> ~/.ssh/authorized_keys
+done
 echo "Added SSH keys:"
 cat ~/.ssh/authorized_keys
 echo " ---------------------- DONE Configuring SSH keys ---------------------- "

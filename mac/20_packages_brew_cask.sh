@@ -1,6 +1,6 @@
-#brew tap caskroom/cask
+brew tap caskroom/cask
 
-#brew cask install 1password
+brew cask install 1password
 brew cask install adium
 brew cask install atom
 brew cask install clipmenu
@@ -28,11 +28,8 @@ brew cask install iterm2
 brew cask install scroll-reverser
 brew cask install spotify
 brew cask install vlc
+brew cask install docker
+brew cask install osxfuse && brew install sshfs
 
-#cask install docker
-# cask install osxfuse # Install from https://osxfuse.github.io/ due to https://github.com/Homebrew/homebrew-fuse/issues/16
-# brew install sshfs
-
-#cask install rescuetime # Tracking how much time you spend per app
 #cask install sidestep # Securing public wifi
 #cask install transmit # FTP client

@@ -1,2 +1,2 @@
 # dotfiles
-Set of scripts/dotfiles to set up mac or linux machines
+Set of scripts/dotfiles to set up mac and linux machines

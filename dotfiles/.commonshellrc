@@ -1,0 +1,47 @@
+alias cl='clear'
+alias ll='ls -alFh'
+alias fck='fuck'
+eval $(thefuck --alias)
+alias json-refmt='python -m json.tool'
+alias vag='vagrant'
+
+# virtualenvwrapper homedir
+export WORKON_HOME=~/venvs
+
+### LINUX
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    source /etc/bash_completion.d/git
+    source /bin/virtualenvwrapper.sh
+
+    # Predictable SSH authentication socket location.
+    SOCK="$HOME/.ssh/agent_sock"
+    if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
+    then
+        unlink "$HOME/.ssh/agent_sock" 2>/dev/null
+        ln -s $SSH_AUTH_SOCK $SOCK
+        export SSH_AUTH_SOCK=$SOCK
+    fi
+
+### MAC
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    export DEFAULT_USER=mlobur
+    alias cask='brew cask'
+    source /usr/local/bin/virtualenvwrapper.sh
+
+    # Shell helpers
+    export PATH=$PATH:~/Dropbox/shell_helpers
+
+    # Go Envs
+    #export GOPATH=$HOME/repos/go_global
+    #export PATH=$PATH:$GOPATH/bin
+
+    # Predictable SSH authentication socket location.
+    SOCK="$HOME/.ssh/agent_sock"
+    AGENT_ENV="$HOME/.ssh/agent_env"
+    if ! ps -x | fgrep -v fgrep | fgrep -q $SOCK;
+    then
+        rm -f $SOCK
+        ssh-agent -a $SOCK > $AGENT_ENV
+    fi
+    eval $(cat $AGENT_ENV)
+fi

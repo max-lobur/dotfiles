@@ -5,7 +5,7 @@ All scripts are idempotent: fix & repeat until succeeds.
 ## Mac
 ```
 mkdir ~/repos && cd ~/repos
-git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
+git clone git@github.com:max-lobur/dotfiles.git && cd dotfiles
 ./init_mac.sh
 ```
 

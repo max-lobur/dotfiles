@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Init script for a main machine (Mac)
 
 echo " --------------------------- INIT --------------------------- "

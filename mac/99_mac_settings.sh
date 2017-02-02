@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo " -------------------- Applying macOS settings... -----------------------"
 
 #Faster Expose

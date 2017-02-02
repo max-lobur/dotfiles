@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo " --------------------------- Configuring git --------------------------- "
 git config --global core.excludesfile ~/.gitignore_global
 git config --global user.name "Max Lobur"

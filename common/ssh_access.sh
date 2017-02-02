@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo " ------------------------ Configuring SSH keys ------------------------- "
 mkdir -p ~/.ssh
 touch ~/.ssh/authorized_keys

@@ -1,9 +1,7 @@
 alias cl='clear'
-alias ll='ls -alFh'
-alias fck='fuck'
-eval $(thefuck --alias)
-alias json-refmt='python -m json.tool'
 alias vag='vagrant'
+alias ll='ls -alFh'
+alias json-refmt='python -m json.tool'
 
 # virtualenvwrapper homedir
 export WORKON_HOME=~/venvs
@@ -26,6 +24,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     export DEFAULT_USER=mlobur
     alias cask='brew cask'
+    alias fck='fuck'
+    eval $(thefuck --alias)
     source /usr/local/bin/virtualenvwrapper.sh
 
     # Shell helpers

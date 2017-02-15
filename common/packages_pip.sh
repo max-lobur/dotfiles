@@ -7,7 +7,7 @@ if ! command -v pip 2>/dev/null; then
 fi
 pip install --upgrade pip
 
+pip install ipython
 pip install virtualenv
 pip install virtualenvwrapper
-pip install ipython
-#pip install gitreview
+#pip install git-review  # Gerrit

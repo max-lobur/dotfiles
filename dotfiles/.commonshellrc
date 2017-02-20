@@ -2,6 +2,7 @@ alias cl='clear'
 alias vag='vagrant'
 alias ll='ls -alFh'
 alias json-refmt='python -m json.tool'
+alias mc='mc -b'
 
 # virtualenvwrapper homedir
 export WORKON_HOME=~/venvs

@@ -6,3 +6,4 @@ yum -y install htop
 yum -y install zsh
 yum -y install wget
 yum -y install telnet
+yum -y install tmux

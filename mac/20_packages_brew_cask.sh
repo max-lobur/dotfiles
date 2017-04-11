@@ -18,6 +18,7 @@ brew cask install flux
 brew cask install gitup
 brew cask install hipchat
 brew cask install iterm2
+brew cask install minikube
 brew cask install ngrok
 brew cask install nosleep
 brew cask install openoffice

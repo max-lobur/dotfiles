@@ -7,10 +7,16 @@ fi
 brew doctor
 
 brew install curl
+brew install daemon
 brew install git
+brew install --force gettext # envsubst
+brew link --force gettext
 brew install htop-osx
 brew install iperf
 brew install iperf3
+brew install jq
+brew install kubernetes-cli
+brew install openssl
 brew install python
 brew install python3
 brew install ssh-copy-id

@@ -6,6 +6,7 @@ if ! command -v brew 2>/dev/null; then
 fi
 brew doctor
 
+brew install awscli
 brew install curl
 brew install daemon
 brew install git

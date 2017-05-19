@@ -4,6 +4,9 @@ alias ll='ls -alFh'
 alias json-refmt='python -m json.tool'
 alias mc='mc -b'
 
+alias ansible="ansible -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
+alias ansible-playbook="ansible-playbook -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
+
 # virtualenvwrapper homedir
 export WORKON_HOME=~/venvs
 
@@ -25,7 +28,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     export DEFAULT_USER=mlobur
     alias cask='brew cask'
-    alias fck='fuck'
+    alias fk='fuck'
     eval $(thefuck --alias)
     source /usr/local/bin/virtualenvwrapper.sh
 

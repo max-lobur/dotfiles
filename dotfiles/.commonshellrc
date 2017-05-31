@@ -6,6 +6,7 @@ alias mc='mc -b'
 
 alias ansible="ansible -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
 alias ansible-playbook="ansible-playbook -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
+alias tf="terraform"
 
 # virtualenvwrapper homedir
 export WORKON_HOME=~/venvs
@@ -36,8 +37,8 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     export PATH=$PATH:~/Dropbox/shell_helpers
 
     # Go Envs
-    #export GOPATH=$HOME/repos/go_global
-    #export PATH=$PATH:$GOPATH/bin
+    export GOPATH=$HOME/go
+    export PATH=$GOPATH/bin:$PATH
 
     # Predictable SSH authentication socket location.
     SOCK="$HOME/.ssh/agent_sock"

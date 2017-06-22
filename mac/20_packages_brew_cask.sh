@@ -33,6 +33,7 @@ brew cask install the-unarchiver
 brew cask install telegram
 brew cask install torbrowser
 brew cask install tunnelbear
+brew cask install tunnelblick
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install vlc

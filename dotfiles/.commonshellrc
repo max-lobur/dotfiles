@@ -6,7 +6,7 @@ alias mc='mc -b'
 
 alias ansible="ansible -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
 alias ansible-playbook="ansible-playbook -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
-alias tf="terraform"
+#alias tf="terraform"
 alias kc="kubectl"
 
 # virtualenvwrapper homedir

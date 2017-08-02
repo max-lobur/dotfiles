@@ -6,5 +6,3 @@ if [ ! -d "$HOME/.oh-my-zsh/" ]; then
         mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
     fi
 fi
-
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k

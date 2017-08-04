@@ -3,6 +3,7 @@ alias vag='vagrant'
 alias ll='ls -alFh'
 alias json-refmt='python -m json.tool'
 alias mc='mc -b'
+alias watch='watch ' # watch to see all other aliases
 
 alias ansible="ansible -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
 alias ansible-playbook="ansible-playbook -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"

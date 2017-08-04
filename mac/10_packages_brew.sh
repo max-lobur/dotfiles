@@ -18,6 +18,7 @@ brew install iperf
 brew install iperf3
 brew install jq
 brew install kubernetes-cli
+brew install kubernetes-helm
 brew install openssl
 brew install postgresql
 brew install perl

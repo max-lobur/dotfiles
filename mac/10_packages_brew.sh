@@ -27,6 +27,7 @@ brew install pv
 brew install python
 brew install python3
 brew install ruby
+/usr/local/bin/gem install travis
 brew install ssh-copy-id
 brew install terraform
 brew install thefuck

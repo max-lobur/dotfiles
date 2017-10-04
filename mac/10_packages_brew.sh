@@ -14,6 +14,7 @@ brew install git
 brew install --force gettext # envsubst
 brew link --force gettext
 brew install gnu-tar
+brew install gpg
 brew install htop-osx
 brew install iperf
 brew install iperf3

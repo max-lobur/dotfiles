@@ -14,6 +14,7 @@ brew cask install dropbox
 brew cask install evernote
 brew cask install firefox
 brew cask install gitup 
+brew cask install google-chrome
 brew cask install iterm2
 brew cask install minikube
 brew cask install ngrok

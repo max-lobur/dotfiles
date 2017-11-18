@@ -19,6 +19,7 @@ brew install gpg
 brew install gcc
 brew install go
 brew install htop-osx
+brew install hh
 brew install iperf
 brew install iperf3
 brew install jq

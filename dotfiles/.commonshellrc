@@ -7,7 +7,7 @@ alias watch='watch ' # watch to see all other aliases
 
 alias ansible="ansible -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
 alias ansible-playbook="ansible-playbook -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
-#alias tf="terraform"
+alias tf="terraform"
 alias kc="kubectl"
 
 alias python="/usr/bin/env python2"

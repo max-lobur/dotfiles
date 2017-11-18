@@ -7,16 +7,13 @@ brew cask install adium
 brew cask install aerial
 brew cask install appcleaner
 brew cask install atom
-brew cask install awareness
 brew cask install clipmenu
 brew cask install daisydisk
 brew cask install docker
 brew cask install dropbox
 brew cask install evernote
 brew cask install firefox
-#brew cask install flux  # screen temp based on time
 brew cask install gitup 
-#brew cask install hipchat  # atlassian slack
 brew cask install iterm2
 brew cask install minikube
 brew cask install ngrok

@@ -8,6 +8,7 @@ brew doctor
 
 brew install ansible
 brew install awscli
+brew install bash
 brew install curl
 brew install daemon
 brew install git
@@ -15,8 +16,8 @@ brew install --force gettext # envsubst
 brew link --force gettext
 brew install gnu-tar
 brew install gpg
-xcode-select --install # for gcc
 brew install gcc
+brew install go
 brew install htop-osx
 brew install iperf
 brew install iperf3

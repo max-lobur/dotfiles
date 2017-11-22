@@ -7,7 +7,7 @@ brew cask install adium
 brew cask install aerial
 brew cask install appcleaner
 brew cask install atom
-brew cask install clipmenu
+brew cask install clipy
 brew cask install daisydisk
 brew cask install docker
 brew cask install dropbox

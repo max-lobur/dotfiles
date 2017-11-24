@@ -6,8 +6,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
 # hh
-export HISTFILE=~/.zsh_history  # ensure history file visibility
-export HH_CONFIG=hicolor        # get more colors
-#bindkey -s "\C-r" "\eqhh\n"     # bind hh to Ctrl-r (for Vi mode check doc)
+export HISTFILE=~/.zsh_history
+export HH_CONFIG=prompt-bottom,rawhistory,keywords
+export HH_PROMPT="bck-i-search: "
+bindkey -s "\C-r" "\eqhh\n"
 
 source ~/.commonshellrc

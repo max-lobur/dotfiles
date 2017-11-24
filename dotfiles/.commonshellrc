@@ -10,10 +10,11 @@ alias ansible-playbook="ansible-playbook -e 'ansible_python_interpreter=\"/usr/b
 alias tf="terraform"
 alias kc="kubectl"
 
-alias python="/usr/bin/env python2"
-alias pip="/usr/bin/env pip2"
+#alias python="/usr/bin/env python2"
+#alias pip="/usr/bin/env pip2"
 
 # virtualenvwrapper homedir
+mkdir -p ~/venvs
 export WORKON_HOME=~/venvs
 
 ### LINUX

@@ -3,7 +3,9 @@
 
 echo " --------------------------- INIT --------------------------- "
 # 1) dotfiles
-ln -sf $(pwd)/dotfiles/.* ~/
+for f in $(ls -d $(pwd)/dotfiles/.?* | grep -v "^/.$" | grep -v "/..$"); do
+    ln -sf $f ~/
+done
 
 # 2) os-specific
 for f in $(ls ./mac/); do

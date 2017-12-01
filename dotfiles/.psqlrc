@@ -1,28 +1,28 @@
-# less noisy when on start up
+/* less noisy when on start up */
 \set QUIET 1
 
-# Visible NULLs
+/* Visible NULLs */
 \pset null '¤'
 
-# Display db name in prompt
+/* Display db name in prompt */
 \set PROMPT1 '%[%033[1m%][%/] # '
 -- SELECT * FROM<enter>. %R shows what type of input it expects.
 \set PROMPT2 '... > '
 
-# Time all the things
+/* Time all the things */
 \timing
 
-# Auto format long and short tables
+/* Auto format long and short tables */
 \x auto
 
-# All verbose
+/* All verbose */
 \set VERBOSITY verbose
 
-# Log everything into file
+/* Log everything into file */
 \set HISTFILE ~/.psql_history- :DBNAME
 \set HISTCONTROL ignoredups
 
-# UPPERCASE keywords on TAB
+/* UPPERCASE keywords on TAB */
 \set COMP_KEYWORD_CASE upper
 
 \unset QUIET

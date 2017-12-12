@@ -23,6 +23,7 @@ brew install hh
 brew install iperf
 brew install iperf3
 brew install jq
+brew install hub
 brew install kubernetes-cli
 brew install kubernetes-helm
 brew install openssl

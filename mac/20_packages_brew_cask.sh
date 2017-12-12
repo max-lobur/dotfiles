@@ -27,6 +27,7 @@ brew cask install scroll-reverser
 brew cask install skype
 brew cask install slack
 brew cask install spotify
+brew cask install spectacle
 brew cask install the-unarchiver
 brew cask install telegram
 brew cask install torbrowser

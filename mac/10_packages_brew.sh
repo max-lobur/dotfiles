@@ -26,6 +26,7 @@ brew install jq
 brew install hub
 brew install kubernetes-cli
 brew install kubernetes-helm
+brew install mc
 brew install openssl
 brew install postgresql
 brew install perl

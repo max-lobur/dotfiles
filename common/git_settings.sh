@@ -12,6 +12,8 @@ git config --global push.default simple
 git config --global gitreview.scheme=ssh
 git config --global gitreview.username=max_lobur
 
+git config --global alias.br "for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | tail "
+
 ### MAC
 if [[ "$OSTYPE" == "darwin"* ]]; then
 git config --global user.signingkey 44467E0C458A6875C0C03BDBEF76DF7495A88C1E

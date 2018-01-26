@@ -15,6 +15,7 @@ brew cask install evernote
 brew cask install firefox
 brew cask install gitup 
 brew cask install google-chrome
+brew cask install gpg-suite
 brew cask install iterm2
 brew cask install java
 brew cask install minikube

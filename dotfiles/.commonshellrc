@@ -36,6 +36,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     export DEFAULT_USER=mlobur
     alias cask='brew cask'
+    alias htop='sudo htop'
     alias fk='fuck'
     eval $(thefuck --alias)
     source /usr/local/bin/virtualenvwrapper.sh

@@ -18,5 +18,8 @@ chflags nohidden ~/Library
 #Add a context menu item for showing the Web Inspector in web views
 #defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+#Keep Mac from writing .DS_Store files to network drives.
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
 echo "Reboot to apply KeyRepeat settings."
 echo " ------------------ DONE Applying macOS settings... --------------------"

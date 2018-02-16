@@ -6,7 +6,6 @@ brew cask install 1password
 brew cask install adium
 brew cask install aerial
 brew cask install appcleaner
-brew cask install atom
 brew cask install clipy
 brew cask install daisydisk
 brew cask install docker

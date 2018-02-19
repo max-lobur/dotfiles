@@ -35,8 +35,8 @@ brew cask install telegram
 brew cask install torbrowser
 brew cask install tunnelbear
 brew cask install tunnelblick
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
+#brew cask install virtualbox
+#brew cask install virtualbox-extension-pack
 brew cask install vlc
 brew cask install yujitach-menumeters
 brew cask install zoomus

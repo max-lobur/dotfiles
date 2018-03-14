@@ -11,6 +11,7 @@ brew install awscli
 brew install bash
 brew install curl
 brew install daemon
+brew install direnv
 brew install git
 brew install --force gettext # envsubst
 brew link --force gettext

@@ -19,7 +19,7 @@ chflags nohidden ~/Library
 #defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 #Keep Mac from writing .DS_Store files to network drives.
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+#defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 echo "Reboot to apply KeyRepeat settings."
 echo " ------------------ DONE Applying macOS settings... --------------------"

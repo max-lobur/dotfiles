@@ -34,9 +34,9 @@ brew install postgresql
 brew install perl
 brew install pv
 brew install python
+brew install python2
 ln -s /usr/local/bin/python{2,}
 ln -s /usr/local/bin/pip{2,}
-brew install python3
 brew install ruby
 /usr/local/bin/gem install travis
 brew install ssh-copy-id

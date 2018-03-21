@@ -10,4 +10,5 @@ pip install --upgrade pip
 pip install ipython
 pip install virtualenv
 pip install virtualenvwrapper
+pip install aws-profile
 #pip install git-review  # Gerrit

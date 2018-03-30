@@ -29,6 +29,7 @@ brew install kubernetes-cli
 brew install kubernetes-helm
 brew install kubectx --with-short-names
 brew install mc
+brew install nmap
 brew install openssl
 brew install postgresql
 brew install perl

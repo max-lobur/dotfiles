@@ -42,6 +42,7 @@ brew install ruby
 /usr/local/bin/gem install travis
 brew install ssh-copy-id
 brew install terraform
+brew install terraform-docs
 brew install thefuck
 brew install vim
 brew install wakeonlan

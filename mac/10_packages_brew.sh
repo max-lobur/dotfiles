@@ -43,6 +43,7 @@ brew install ruby
 brew install ssh-copy-id
 brew install terraform
 brew install terraform-docs
+brew install terragrunt
 brew install thefuck
 brew install vim
 brew install wakeonlan

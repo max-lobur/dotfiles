@@ -10,6 +10,7 @@ alias pingg='ping g.co -c5'
 alias ansible="ansible -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
 alias ansible-playbook="ansible-playbook -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
 alias tf="terraform"
+alias tg="terragrunt"
 alias kc="kubectl"
 
 #alias python="/usr/bin/env python2"

@@ -14,4 +14,7 @@ export HH_CONFIG=prompt-bottom,rawhistory,keywords
 export HH_PROMPT="bck-i-search: "
 bindkey -s "\C-r" "\eqhh\n"
 
+# direnv
+eval "$(direnv hook zsh)"
+
 source ~/.commonshellrc

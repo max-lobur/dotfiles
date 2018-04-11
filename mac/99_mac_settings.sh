@@ -10,13 +10,25 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
 #Show the ~/Library folder
 chflags nohidden ~/Library
+# Show hidden files
+defaults write com.apple.finder AppleShowAllFiles -bool true
+# Empty Trash securely by default
+defaults write com.apple.finder EmptyTrashSecurely -bool true
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+# Display full POSIX path as Finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+# Disable the "Are you sure you want to open this application?" dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+# Show all filename extensions in Finder
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+# Dock
+defaults write com.apple.dock magnification -boolean false
+defaults write com.apple.dock tilesize -integer 15
 
 #Store screenshots in subfolder on desktop
 # mkdir ~/Desktop/Screenshots
 # defaults write com.apple.screencapture location ~/Desktop/Screenshots
-
-#Add a context menu item for showing the Web Inspector in web views
-#defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 #Keep Mac from writing .DS_Store files to network drives.
 #defaults write com.apple.desktopservices DSDontWriteNetworkStores true

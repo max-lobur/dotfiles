@@ -6,5 +6,16 @@
     "workbench.colorTheme": "One Monokai",
     "workbench.activityBar.visible": true,
     "workbench.editor.showTabs": false,
-    "explorer.openEditors.visible": 0
+    "explorer.openEditors.visible": 0,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.currentLine.enabled": false,
 }

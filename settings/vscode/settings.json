@@ -2,7 +2,8 @@
     "files.autoSave": "onFocusChange",
     "terminal.integrated.shell.osx": "/usr/local/bin/bash",
     "workbench.sideBar.location": "left",
-    "workbench.statusBar.visible": false,
+    "workbench.statusBar.visible": true,
+    "workbench.statusBar.feedback.visible": false,
     "workbench.colorTheme": "Dracula Soft",
     "workbench.activityBar.visible": false,
     "workbench.editor.showTabs": false,
@@ -21,4 +22,5 @@
     "editor.codeLens": false,
     "search.location": "panel",
     "window.title": "${rootName}",
+    "editor.suggestSelection": "recentlyUsedByPrefix",
 }

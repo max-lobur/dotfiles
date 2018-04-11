@@ -18,4 +18,5 @@
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.currentLine.enabled": false,
+    "editor.codeLens": false,
 }

@@ -7,6 +7,7 @@ touch $HOME/.ssh/agent_env
 
 # VS Code
 ln -sf ~/repos/dotfiles/settings/vscode/settings.json /Users/mlobur/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/repos/dotfiles/settings/vscode/keybindings.json /Users/mlobur/Library/Application\ Support/Code/User/keybindings.json
 
 # Dirs
 mkdir -p $HOME/venvs

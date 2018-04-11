@@ -1,6 +1,10 @@
 {
-    "workbench.colorTheme": "Monokai Dimmed",
     "files.autoSave": "onFocusChange",
     "terminal.integrated.shell.osx": "/usr/local/bin/bash",
     "workbench.sideBar.location": "left",
+    "workbench.statusBar.visible": false,
+    "workbench.colorTheme": "One Monokai",
+    "workbench.activityBar.visible": true,
+    "workbench.editor.showTabs": false,
+    "explorer.openEditors.visible": 0
 }

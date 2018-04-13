@@ -9,7 +9,7 @@ Each init script should have the following order:
 
 ## macOS
 ```
-mkdir ~/repos && cd ~/repos
+mkdir ~/git && cd ~/git
 git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
 git remote set-url origin git@github.com:max-lobur/dotfiles.git  # ssh push later
 ./init_mac.sh

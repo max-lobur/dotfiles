@@ -4,7 +4,7 @@ brew tap caskroom/cask
 
 brew cask install 1password
 brew cask install adium
-brew cask install aerial
+#brew cask install aerial
 brew cask install appcleaner
 brew cask install clipy
 brew cask install daisydisk
@@ -19,11 +19,10 @@ brew cask install iterm2
 brew cask install java
 brew cask install minikube
 brew cask install ngrok
-brew cask install nosleep
 brew cask install openoffice
 brew cask install opera
 brew cask install osxfuse && brew install sshfs
-brew cask install pycharm-ce
+#brew cask install pycharm-ce
 brew cask install scroll-reverser
 brew cask install skype
 brew cask install slack

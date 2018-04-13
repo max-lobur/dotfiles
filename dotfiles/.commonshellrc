@@ -43,7 +43,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     source /usr/local/bin/virtualenvwrapper.sh
 
     # Shell helpers
-    export PATH=$PATH:~/repos/dotfiles/sh:~/Dropbox/shell_helpers
+    export PATH=$PATH:~/git/dotfiles/sh:~/Dropbox/shell_helpers
 
     # Go Envs
     export GOPATH=$HOME/go

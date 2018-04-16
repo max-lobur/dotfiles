@@ -11,7 +11,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 12
 #Show the ~/Library folder
 chflags nohidden ~/Library
 # Show hidden files
-defaults write com.apple.finder AppleShowAllFiles -bool true
+#defaults write com.apple.finder AppleShowAllFiles -bool true
 # Empty Trash securely by default
 defaults write com.apple.finder EmptyTrashSecurely -bool true
 # Disable the warning when changing a file extension
@@ -24,7 +24,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # Dock
 defaults write com.apple.dock magnification -boolean false
-defaults write com.apple.dock tilesize -integer 15
+defaults write com.apple.dock tilesize -integer 40
 
 #Store screenshots in subfolder on desktop
 # mkdir ~/Desktop/Screenshots

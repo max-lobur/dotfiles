@@ -23,4 +23,12 @@
     "window.title": "${rootName}",
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "workbench.colorTheme": "Dracula Soft",
+    "python.pythonPath": "/Users/mlobur/venvs/${workspaceFolderBasename}/bin/python",
+    "python.venvFolders": [
+        "envs",
+        ".pyenv",
+        ".direnv",
+        "/Users/mlobur/venvs/"
+      ],
+    "python.autoComplete.addBrackets": true,
 }

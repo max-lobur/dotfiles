@@ -29,5 +29,9 @@
         "key": "enter",
         "command": "-acceptSelectedSuggestionOnEnter",
         "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+    },
+    {
+        "key": "shift+cmd+h",
+        "command": "-workbench.action.replaceInFiles"
     }
 ]

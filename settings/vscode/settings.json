@@ -32,4 +32,5 @@
         "/Users/mlobur/venvs/"
       ],
     "python.autoComplete.addBrackets": true,
+    "workbench.iconTheme": "material-icon-theme",
 }

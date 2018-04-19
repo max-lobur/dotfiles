@@ -8,6 +8,7 @@ echo "> ll ${conf_dir}"
 ls -la "${conf_dir}"
 
 # Extensions
+# code --list-extensions > settings/vscode/extensions.txt
 extensions="${HOME}/git/dotfiles/settings/vscode/extensions.txt"
 while IFS= read -r ext
 do

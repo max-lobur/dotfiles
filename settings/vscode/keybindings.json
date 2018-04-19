@@ -33,5 +33,13 @@
     {
         "key": "shift+cmd+h",
         "command": "-workbench.action.replaceInFiles"
+    },
+    {
+        "key": "shift+cmd+backspace",
+        "command": "extension.gotoLastEditLocation"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-extension.gotoLastEditLocation"
     }
 ]

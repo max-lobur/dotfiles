@@ -2,6 +2,7 @@ PKief.material-icon-theme
 dracula-theme.theme-dracula
 eamodio.gitlens
 k--kato.intellij-idea-keybindings
+krizzdewizz.goto-last-edit-location
 lukehoban.Go
 mauve.terraform
 ms-python.python

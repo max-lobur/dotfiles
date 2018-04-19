@@ -1,0 +1,9 @@
+PKief.material-icon-theme
+dracula-theme.theme-dracula
+eamodio.gitlens
+k--kato.intellij-idea-keybindings
+lukehoban.Go
+mauve.terraform
+ms-python.python
+msysyamamoto.vscode-fluentd
+wholroyd.jinja

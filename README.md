@@ -1,8 +1,14 @@
-# dotfiles
-Set of scripts/dotfiles to set up mac and linux machines.  
+```
+     _       _    __ _ _           
+  __| | ___ | |_ / _(_) | ___  ___ 
+ / _` |/ _ \| __| |_| | |/ _ \/ __|
+| (_| | (_) | |_|  _| | |  __/\__ \
+ \__,_|\___/ \__|_| |_|_|\___||___/
+```                              
+
 All scripts are idempotent: fix & repeat until succeeds.
 
-Each init script should have the following order:
+Each `init_*` script must have the following order:
 * dotfiles
 * os-specific scripts
 * common scripts
@@ -23,4 +29,6 @@ git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
 ```
 
 ## Debian/Ubuntu
-TODO
+```
+¯\_(ツ)_/¯
+```

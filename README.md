@@ -4,14 +4,9 @@
  / _` |/ _ \| __| |_| | |/ _ \/ __|
 | (_| | (_) | |_|  _| | |  __/\__ \
  \__,_|\___/ \__|_| |_|_|\___||___/
-```                              
-
-All scripts are idempotent: fix & repeat until succeeds.
-
-Each `init_*` script must have the following order:
-* dotfiles
-* os-specific scripts
-* common scripts
+ 
+```
+Zero friction mac and linux bootstrap
 
 ## macOS
 ```
@@ -32,3 +27,12 @@ git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
 ```
 ¯\_(ツ)_/¯
 ```
+
+## Adding a distro
+The `init_<distro>.sh` script must have the following order:
+1. dotfiles
+1. os-specific scripts
+1. common scripts
+
+## Troubleshooting
+All scripts are idempotent - hack & rerun until it works.

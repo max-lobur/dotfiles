@@ -5,6 +5,7 @@ k--kato.intellij-idea-keybindings
 krizzdewizz.goto-last-edit-location
 lukehoban.Go
 mauve.terraform
+mindginative.terraform-snippets
 ms-python.python
 msysyamamoto.vscode-fluentd
 wholroyd.jinja

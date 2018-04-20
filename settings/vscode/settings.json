@@ -34,4 +34,11 @@
       ],
     "python.autoComplete.addBrackets": true,
     "workbench.iconTheme": "material-icon-theme",
+    "terraform.format": {
+        "enable": true,
+        "ignoreExtensionsOnSave": [
+          ".tfsmurf"
+        ],
+        "formatOnSave": false
+      },
 }

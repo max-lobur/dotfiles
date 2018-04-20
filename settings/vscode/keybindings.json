@@ -67,4 +67,8 @@
         "command": "-editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
+    {
+        "key": "shift+enter",
+        "command": "editor.action.showSnippets"
+    },
 ]

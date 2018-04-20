@@ -1,5 +1,6 @@
 {
-    "files.autoSave": "onFocusChange",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
     "terminal.integrated.shell.osx": "/usr/local/bin/bash",
     "workbench.sideBar.location": "left",
     "workbench.statusBar.visible": false,

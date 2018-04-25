@@ -19,6 +19,7 @@ brew install gnu-tar
 brew install gpg
 brew install gcc
 brew install go
+brew install groovy
 brew install htop-osx
 brew install hh
 brew install iperf

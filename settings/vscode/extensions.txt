@@ -1,4 +1,5 @@
 PKief.material-icon-theme
+PeterJausovec.vscode-docker
 dracula-theme.theme-dracula
 eamodio.gitlens
 k--kato.intellij-idea-keybindings

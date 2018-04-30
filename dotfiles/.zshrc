@@ -17,4 +17,7 @@ bindkey -s "\C-r" "\eqhh\n"
 # direnv
 eval "$(direnv hook zsh)"
 
+export HISTSIZE=10000  # how many lines of history to keep in memory
+export SAVEHIST=10000  # how many lines to keep in the history file
+
 source ~/.commonshellrc

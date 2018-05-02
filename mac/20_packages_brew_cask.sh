@@ -22,7 +22,7 @@ brew cask install ngrok
 brew cask install openoffice
 brew cask install opera
 brew cask install osxfuse && brew install sshfs
-#brew cask install pycharm-ce
+brew cask install pycharm-ce
 brew cask install scroll-reverser
 brew cask install skype
 brew cask install slack

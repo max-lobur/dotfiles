@@ -71,4 +71,14 @@
         "key": "shift+enter",
         "command": "editor.action.showSnippets"
     },
+    {
+        "key": "f2",
+        "command": "-editor.action.marker.next",
+        "when": "editorFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "--editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    }
 ]

@@ -23,6 +23,8 @@ export SAVEHIST=10000  # how many lines to keep in the history file
 # k8s PS1
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 export KUBE_PS1_SYMBOL_ENABLE=false
+export KUBE_PS1_CTX_COLOR=blue
+export KUBE_PS1_NS_COLOR=green
 PROMPT='$(kube_ps1)'$PROMPT
 kubeoff
 

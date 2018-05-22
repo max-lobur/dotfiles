@@ -48,6 +48,7 @@ brew install terraform
 brew install terraform-docs
 brew install terragrunt
 brew install thefuck
+brew install vault
 brew install vim
 brew install wakeonlan
 brew install watch

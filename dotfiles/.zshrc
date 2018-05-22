@@ -1,5 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="agnoster"
+ZSH_THEME="bira"
 plugins=(git colored-man docker kubectl aws)
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -24,8 +24,14 @@ export SAVEHIST=10000  # how many lines to keep in the history file
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 export KUBE_PS1_SYMBOL_ENABLE=false
 export KUBE_PS1_CTX_COLOR=blue
-export KUBE_PS1_NS_COLOR=green
-PROMPT='$(kube_ps1)'$PROMPT
+export KUBE_PS1_NS_COLOR=yellow
 kubeoff
+
+# Hack bira prompt to prettify virtualenv and kube-ps1
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+local pythonenv='`[ -z "$VIRTUAL_ENV" ] || echo "(${VIRTUAL_ENV##*/})"`'
+local kubeenv='`kube_ps1`'
+PROMPT=" ╭─${pythonenv}${kubeenv} ${current_dir} ${git_branch}
+ ╰─%B${user_symbol}%b "
 
 source ~/.commonshellrc

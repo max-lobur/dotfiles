@@ -57,6 +57,7 @@ local kubeenv='`kube_ps1`'
 local git='`prompt_git`'
 
 PROMPT=" ╭─${pythonenv}${kubeenv} ${current_dir} ${git}
- ╰─%B${user_symbol}%b "
+ ╰─ᐅ "  
+# %B%F{1}❯%F{3}❯%F{2}❯%f%b
 
 source ~/.commonshellrc

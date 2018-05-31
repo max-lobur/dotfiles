@@ -25,7 +25,6 @@ source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 export KUBE_PS1_SYMBOL_ENABLE=false
 export KUBE_PS1_CTX_COLOR=green
 export KUBE_PS1_NS_COLOR=yellow
-kubeoff
 
 # Hack zsh bira prompt to prettify virtualenv, kube-ps1 and git.
 prompt_git() {
@@ -53,7 +52,7 @@ prompt_git() {
 }
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 local pythonenv='`[ -z "$VIRTUAL_ENV" ] || echo "(${VIRTUAL_ENV##*/})"`'
-local kubeenv='`kube_ps1`'
+local kubeenv='`[ -z "$KUBECONFIG" ] || kube_ps1`'
 local git='`prompt_git`'
 
 PROMPT=" ╭─${pythonenv}${kubeenv} ${current_dir} ${git}

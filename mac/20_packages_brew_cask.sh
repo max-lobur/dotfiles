@@ -18,6 +18,7 @@ brew cask install google-chrome
 brew cask install gpg-suite
 brew cask install iterm2
 brew cask install java
+brew cask install kubernetic
 brew cask install minikube
 brew cask install ngrok
 brew cask install openoffice

@@ -44,6 +44,7 @@ ln -s /usr/local/bin/pip{2,}
 brew install ruby
 /usr/local/bin/gem install travis
 brew install ssh-copy-id
+brew install telnet
 brew install terraform
 brew install terraform-docs
 brew install terragrunt

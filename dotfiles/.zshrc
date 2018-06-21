@@ -55,7 +55,7 @@ prompt_git() {
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 local pythonenv='`[ -z "$VIRTUAL_ENV" ] || echo "(${VIRTUAL_ENV##*/})"`'
 local kubeenv='`[ -z "$KUBECONFIG" ] || kube_ps1`'
-local git='`prompt_git`'
+local git='%F{2}`prompt_git`%f%b'
 
 PROMPT=" ╭─${pythonenv} ${current_dir} ${git} ${kubeenv}
  ╰─ᐅ "  

@@ -9,6 +9,7 @@ brew doctor
 brew install ansible
 brew install awscli
 brew install bash
+brew install blueutil
 brew install curl
 brew install daemon
 brew install direnv

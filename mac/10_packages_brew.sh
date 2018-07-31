@@ -55,4 +55,5 @@ brew install vim
 brew install wakeonlan
 brew install watch
 brew install wget
+brew install youtube-dl
 brew install zsh

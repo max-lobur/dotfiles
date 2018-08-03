@@ -20,6 +20,11 @@ eval "$(direnv hook zsh)"
 export HISTSIZE=10000  # how many lines of history to keep in memory
 export SAVEHIST=10000  # how many lines to keep in the history file
 
+# colordiff
+function diff {
+     colordiff -u "$@" | less
+}
+
 # k8s PS1
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 export KUBE_PS1_SYMBOL_ENABLE=false

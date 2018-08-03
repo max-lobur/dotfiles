@@ -11,6 +11,7 @@ brew install awscli
 brew install bash
 brew install blueutil
 brew install curl
+brew install colordiff
 brew install daemon
 brew install direnv
 brew install git

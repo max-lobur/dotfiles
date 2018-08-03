@@ -13,9 +13,6 @@ alias tf="terraform"
 alias tg="terragrunt"
 alias kc="kubectl"
 
-#alias python="/usr/bin/env python2"
-#alias pip="/usr/bin/env pip2"
-
 # virtualenvwrapper homedir
 export WORKON_HOME=~/venvs
 

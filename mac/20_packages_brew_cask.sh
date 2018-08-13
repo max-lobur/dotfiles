@@ -5,6 +5,7 @@ brew tap caskroom/cask
 brew cask install 1password
 brew cask install adium
 #brew cask install aerial
+brew cask install avibrazil-rdm
 brew cask install appcleaner
 brew cask install clipy
 brew cask install daisydisk

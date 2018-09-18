@@ -28,7 +28,7 @@ function diff {
 # k8s PS1
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 export KUBE_PS1_SYMBOL_ENABLE=false
-export KUBE_PS1_PREFIX='['
+export KUBE_PS1_PREFIX=' ['
 export KUBE_PS1_SUFFIX=']'
 export KUBE_PS1_CTX_COLOR=cyan
 export KUBE_PS1_NS_COLOR=blue
@@ -54,16 +54,16 @@ prompt_git() {
     zstyle ':vcs_info:*' formats ' %u%c'
     zstyle ':vcs_info:*' actionformats ' %u%c'
     vcs_info
-    echo -n "${ref/refs\/heads\//$PL_BRANCH_CHAR }${vcs_info_msg_0_%% }"
+    echo -n " ${ref/refs\/heads\//$PL_BRANCH_CHAR }${vcs_info_msg_0_%% }"
   fi
 }
 export VIRTUAL_ENV_DISABLE_PROMPT=1
-local pythonenv='`[ -z "$VIRTUAL_ENV" ] || echo "(${VIRTUAL_ENV##*/})"`'
+local pythonenv='`[ -z "$VIRTUAL_ENV" ] || echo "(${VIRTUAL_ENV##*/}) "`'
 local kubeenv='`[ -z "$KUBECONFIG" ] || kube_ps1`'
 local git='%F{2}`prompt_git`%f%b'
 
-PROMPT=" ╭─${pythonenv} ${current_dir} ${git} ${kubeenv}
- ╰─ᐅ "  
-# %B%F{1}❯%F{3}❯%F{2}❯%f%b
+#PROMPT=" ╭─${pythonenv}${current_dir}${git}${kubeenv}
+# ╰─ᐅ "
+PROMPT="%B%F{1}❯%F{3}❯%F{2}❯%f%b ${pythonenv}${current_dir}${git}${kubeenv} %F{2}❯%f%b "
 
 source ~/.commonshellrc

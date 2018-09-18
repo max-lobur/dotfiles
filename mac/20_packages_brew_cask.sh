@@ -34,7 +34,7 @@ brew cask install spotmenu
 brew cask install spectacle
 brew cask install the-unarchiver
 brew cask install telegram
-brew cask install torbrowser
+brew cask install tor-browser
 brew cask install tunnelbear
 brew cask install tunnelblick
 #brew cask install virtualbox

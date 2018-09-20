@@ -13,7 +13,7 @@ NAME=`basename ${URL} .git`
 
 git clone ${URL}
 cd ${NAME}
-hub fork ${URL} || true
+hub fork --no-remote ${URL} || true
 git remote rename origin upstream
 git remote add origin "git@github.com:max-lobur/${NAME}.git"
 echo "Git remotes:"

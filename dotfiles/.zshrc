@@ -64,6 +64,6 @@ local git='%F{2}`prompt_git`%f%b'
 
 #PROMPT=" ╭─${pythonenv}${current_dir}${git}${kubeenv}
 # ╰─ᐅ "
-PROMPT="%B%F{1}❯%F{3}❯%F{2}❯%f%b ${pythonenv}${current_dir}${git}${kubeenv} %F{2}❯%f%b "
+PROMPT="%B%F{1}❯%F{3}❯%F{2}❯%f%b ${pythonenv}${current_dir}${git}${kubeenv} ❯ "
 
 source ~/.commonshellrc

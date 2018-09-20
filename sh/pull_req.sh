@@ -4,11 +4,9 @@
 #   brew install hub
 #   hub browse
 #
-# and git remotes:
-# "origin" - your fork
-# "upstream" - verygood-ops/infra-vault
-#
-UPSTREAM=verygood-ops/infra-vault:unify
+upstream_repo=`git remote get-url upstream | sed 's/git@github.com:\(.*\)\.git/\1/'`
+upstream_br=`git symbolic-ref refs/remotes/upstream/HEAD | sed 's/refs\/remotes\/upstream\/\(.*\)/\1/'`
+upstream="${upstream_repo}:${upstream_br}"
 
 echo -n "Pull Request Title (empty for last commit msg): "
 read title
@@ -18,11 +16,11 @@ title=${title:-$last_commit_title}
 topic_branch=`git rev-parse --abbrev-ref HEAD`
 git push origin ${topic_branch}
 
-hub pull-request -b ${UPSTREAM} -F - > /tmp/last_pr_url <<MSG
+hub pull-request -b ${upstream} -F - > /tmp/last_pr_url <<MSG
 ${title}
 
-`cat PULL_REQUEST_TEMPLATE`
+`cat PULL_REQUEST_TEMPLATE 2> /dev/null`
 MSG
 pr_url=`cat /tmp/last_pr_url`
 echo "Opening ${pr_url}"
-open ${pr_url}%
+open ${pr_url}

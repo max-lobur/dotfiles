@@ -4,9 +4,10 @@
  / _` |/ _ \| __| |_| | |/ _ \/ __|
 | (_| | (_) | |_|  _| | |  __/\__ \
  \__,_|\___/ \__|_| |_|_|\___||___/
- 
+
 ```
 Zero friction mac and linux bootstrap
+![iterm2](./iterm2.png)
 
 ## macOS
 ```

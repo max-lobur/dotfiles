@@ -16,7 +16,7 @@ brew cask install etcher
 brew cask install firefox
 brew cask install gitup 
 brew cask install google-chrome
-brew cask install gpg-suite
+brew cask install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
 brew cask install haptickey
 brew cask install iterm2
 brew cask install java

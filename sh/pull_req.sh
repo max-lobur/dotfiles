@@ -14,7 +14,7 @@ last_commit_title=`git --no-pager log -1 --pretty=format:%s`
 title=${title:-$last_commit_title}
 
 topic_branch=`git rev-parse --abbrev-ref HEAD`
-git push origin ${topic_branch}
+git push --set-upstream origin ${topic_branch}
 
 hub pull-request -b ${upstream} -F - > /tmp/last_pr_url <<MSG
 ${title}

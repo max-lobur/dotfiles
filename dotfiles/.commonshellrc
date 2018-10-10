@@ -16,9 +16,6 @@ alias kc="kubectl"
 # virtualenvwrapper homedir
 export WORKON_HOME=~/venvs
 
-# clone_fork.sh
-export GH_USERNAME="max-lobur"
-
 ### LINUX
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     source /etc/bash_completion.d/git

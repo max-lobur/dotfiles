@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+#
+# To make it work:
+#   brew install hub
+#   hub browse
+#
 usage()
 {
     echo "Usage:"

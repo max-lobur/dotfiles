@@ -21,7 +21,7 @@ brew cask install haptickey
 brew cask install iterm2
 #brew cask install java
 brew tap caskroom/versions
-brew cask install caskroom/versions/java10
+brew cask install java8
 brew cask install kubernetic
 brew cask install minikube
 brew cask install ngrok

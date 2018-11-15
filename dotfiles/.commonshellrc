@@ -37,6 +37,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     alias cask='brew cask'
     alias htop='sudo htop'
     alias fk='fuck'
+    alias kfwd='sudo kubefwd svc -n'
     eval $(thefuck --alias)
     source /usr/local/bin/virtualenvwrapper.sh
 

@@ -34,6 +34,7 @@ brew install kubernetes-cli
 brew install kubernetes-helm
 brew install kubectx --with-short-names
 brew install kube-ps1
+brew install txn2/tap/kubefwd
 brew install kops
 brew install mc
 brew install nmap

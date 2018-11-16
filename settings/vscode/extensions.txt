@@ -1,6 +1,7 @@
 PKief.material-icon-theme
 PeterJausovec.vscode-docker
 dracula-theme.theme-dracula
+eryouhao.brackets-light-pro
 eamodio.gitlens
 k--kato.intellij-idea-keybindings
 krizzdewizz.goto-last-edit-location

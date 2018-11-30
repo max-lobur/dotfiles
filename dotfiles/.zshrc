@@ -8,11 +8,11 @@ source $ZSH/oh-my-zsh.sh
 # No exit on ctrl+d
 set -o ignoreeof
 
-# hh
+# hstr
 export HISTFILE=~/.zsh_history
-export HH_CONFIG=prompt-bottom,rawhistory,keywords
-export HH_PROMPT="bck-i-search: "
-bindkey -s "\C-r" "\eqhh\n"
+export HSTR_CONFIG=prompt-bottom,rawhistory,keywords
+export HSTR_PROMPT="bck-i-search: "
+bindkey -s "\C-r" "\eqhstr\n"
 
 # direnv
 eval "$(direnv hook zsh)"

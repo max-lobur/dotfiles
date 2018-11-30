@@ -25,7 +25,7 @@ brew install gcc
 brew install go
 brew install groovy
 brew install htop-osx
-brew install hh
+brew install hstr
 brew install iperf
 brew install iperf3
 brew install --HEAD jq

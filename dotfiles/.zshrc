@@ -10,7 +10,7 @@ set -o ignoreeof
 
 # hstr
 export HISTFILE=~/.zsh_history
-export HSTR_CONFIG=prompt-bottom,rawhistory,keywords
+export HSTR_CONFIG=prompt-bottom,rawhistory,keywords-matching
 export HSTR_PROMPT="bck-i-search: "
 bindkey -s "\C-r" "\eqhstr\n"
 

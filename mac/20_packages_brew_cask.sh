@@ -7,12 +7,12 @@ brew cask install adium
 #brew cask install aerial
 brew cask install avibrazil-rdm
 brew cask install appcleaner
+brew cask install balenaetcher
 brew cask install clipy
 brew cask install daisydisk
 brew cask install docker
 brew cask install dropbox
 brew cask install evernote
-brew cask install etcher
 brew cask install firefox
 brew cask install gitup 
 brew cask install google-chrome

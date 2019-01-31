@@ -32,7 +32,7 @@ brew install --HEAD jq
 brew install hub
 brew install kubernetes-cli
 brew install kubernetes-helm
-brew install kubectx --with-short-names
+brew install kubectx
 brew install kube-ps1
 brew install txn2/tap/kubefwd
 brew install kops

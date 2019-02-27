@@ -46,6 +46,7 @@ brew cask install tunnelblick
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install yujitach-menumeters
+brew cask install yt-music
 brew cask install zoomus
 
 #cask install sidestep # Securing public wifi

@@ -62,3 +62,4 @@ brew install watch
 brew install wget
 brew install youtube-dl && brew install ffmpeg
 brew install zsh
+brew install z

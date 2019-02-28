@@ -43,6 +43,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     alias kfwd='sudo kubefwd svc -n'
     eval $(thefuck --alias)
     source /usr/local/bin/virtualenvwrapper.sh
+    source /usr/local/etc/profile.d/z.sh
 
     # Shell helpers
     export PATH=$PATH:~/git/dotfiles/sh:~/Dropbox/shell_helpers

@@ -2,9 +2,6 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="bira"
 plugins=(git colored-man docker kubectl aws)
 
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 source $ZSH/oh-my-zsh.sh
 

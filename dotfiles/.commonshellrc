@@ -17,6 +17,9 @@ alias kc="kubectl"
 # virtualenvwrapper homedir
 export WORKON_HOME=~/venvs
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 ### LINUX
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     source /etc/bash_completion.d/git

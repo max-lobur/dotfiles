@@ -30,6 +30,7 @@ brew install iperf
 brew install iperf3
 brew install --HEAD jq
 brew install hub
+brew install kafkacat
 brew install kubernetes-cli
 brew install kubernetes-helm
 brew install kubectx

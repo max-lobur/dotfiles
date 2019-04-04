@@ -13,7 +13,7 @@ git config --global gitreview.scheme=ssh
 git config --global gitreview.username=max_lobur
 
 git config --global alias.br "for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | tail "
-git config --global alias.branchdate "!git for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | sed -e 's-refs/heads/--' | tail"
+git config --global alias.branchdate "\!git for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | sed -e 's-refs/heads/--' | tail"
 
 
 ### MAC

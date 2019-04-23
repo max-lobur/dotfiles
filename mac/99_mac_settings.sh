@@ -51,5 +51,8 @@ rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 #Keep Mac from writing .DS_Store files to network drives.
 #defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
+# show wifi stats nearby, do `airport -s`
+sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport
+
 echo "Reboot to apply KeyRepeat settings."
 echo " ------------------ DONE Applying macOS settings... --------------------"

@@ -36,6 +36,7 @@ brew install kubernetes-helm
 brew install kubectx
 brew install kube-ps1
 brew install txn2/tap/kubefwd
+brew tap derailed/k9s && brew install k9s
 brew install kops
 brew install mc
 brew install nmap

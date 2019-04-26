@@ -10,6 +10,7 @@ brew install ansible
 brew install awscli
 brew tap fullscreen/tap
 brew install aws-rotate-key
+brew install aws-iam-authenticator
 brew install bash
 brew install blueutil
 brew install curl

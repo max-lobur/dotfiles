@@ -66,4 +66,11 @@ local git='%F{2}`prompt_git`%f%b'
 # ╰─ᐅ "
 PROMPT="%B%F{1}❯%F{3}❯%F{2}❯%f%b ${pythonenv}${current_dir}${git}${kubeenv} ❯ "
 
+# iterm2 status bar:
+function iterm2_print_user_vars() {
+  iterm2_set_user_var kubecontext ${kubeenv}
+}
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
 source ~/.commonshellrc
+

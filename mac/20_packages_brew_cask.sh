@@ -4,8 +4,8 @@ brew tap caskroom/cask
 
 brew cask install 1password
 brew cask install adium
-#brew cask install aerial
-brew cask install avibrazil-rdm
+#brew cask install aerial  # apple tv screensaver
+#brew cask install avibrazil-rdm  # hack mac screen resolution
 brew cask install appcleaner
 brew cask install balenaetcher
 brew cask install clipy
@@ -14,7 +14,7 @@ brew cask install docker
 brew cask install dropbox
 brew cask install evernote
 brew cask install firefox
-brew cask install gitup 
+brew cask install gitup
 brew cask install google-chrome
 brew cask install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
 brew cask install haptickey
@@ -22,6 +22,7 @@ brew cask install iterm2
 #brew cask install java
 brew tap caskroom/versions
 brew cask install java8
+brew cask install keybase
 brew cask install kubernetic
 brew cask install minikube
 brew cask install ngrok

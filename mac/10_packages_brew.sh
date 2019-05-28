@@ -31,7 +31,7 @@ brew install iperf
 brew install iperf3
 brew install --HEAD jq
 brew install hub
-brew install kafkacat
+brew install fkafkacat
 brew install kubernetes-cli
 brew install kubernetes-helm
 brew install kubectx
@@ -53,7 +53,8 @@ brew install ruby
 /usr/local/bin/gem install travis
 brew install ssh-copy-id
 brew install telnet
-brew install terraform
+#brew install terraform
+brew install terraform@0.11
 brew install terraform-docs
 brew install terragrunt
 brew install thefuck

@@ -16,6 +16,7 @@ alias tg="terragrunt"
 alias k="kubectl"
 alias kctx="kubectx"
 alias kns="kubens"
+alias kb="keybase"
 
 # virtualenvwrapper homedir
 export WORKON_HOME=~/venvs

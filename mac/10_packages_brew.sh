@@ -51,6 +51,7 @@ ln -s /usr/local/bin/python{2,}
 ln -s /usr/local/bin/pip{2,}
 brew install ruby
 /usr/local/bin/gem install travis
+brew install serverless
 brew install ssh-copy-id
 brew install telnet
 #brew install terraform

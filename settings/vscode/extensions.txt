@@ -5,10 +5,10 @@ k--kato.intellij-idea-keybindings
 krizzdewizz.goto-last-edit-location
 mauve.terraform
 mindginative.terraform-snippets
+ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.Go
 msysyamamoto.vscode-fluentd
-PeterJausovec.vscode-docker
 PKief.material-icon-theme
 RobbOwen.synthwave-vscode
 wholroyd.jinja

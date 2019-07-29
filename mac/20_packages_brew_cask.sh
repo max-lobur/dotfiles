@@ -30,6 +30,7 @@ brew cask install openoffice
 brew cask install opera
 brew cask install osxfuse && brew install sshfs
 brew cask install pgadmin4
+brew cask install pock
 brew cask install pycharm-ce
 brew cask install p4v
 brew cask install scroll-reverser

@@ -55,23 +55,23 @@ prompt_git() {
     zstyle ':vcs_info:*' formats ' %u%c'
     zstyle ':vcs_info:*' actionformats ' %u%c'
     vcs_info
-    echo -n " ${ref/refs\/heads\//$PL_BRANCH_CHAR }${vcs_info_msg_0_%% }"
+    echo -n "${ref/refs\/heads\//$PL_BRANCH_CHAR }${vcs_info_msg_0_%% }"
   fi
 }
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 local pythonenv='`[ -z "$VIRTUAL_ENV" ] || echo "(${VIRTUAL_ENV##*/}) "`'
-local kubeenv='`[ -z "$KUBECONFIG" ] || kube_ps1`'
+local kubeenv='' #local kubeenv='`[ -z "$KUBECONFIG" ] || kube_ps1`'
 local git='%F{2}`prompt_git`%f%b'
 
 #PROMPT=" ╭─${pythonenv}${current_dir}${git}${kubeenv}
 # ╰─ᐅ "
 PROMPT="%B%F{1}❯%F{3}❯%F{2}❯%f%b ${pythonenv}${current_dir}${git}${kubeenv} ❯ "
 
-# iterm2 status bar:
 function iterm2_print_user_vars() {
-  iterm2_set_user_var kubecontext ${kubeenv}
+    iterm2_set_user_var kubecontext $(kubectl config current-context)
+    iterm2_set_user_var kubens $(kubectl config view --minify --output 'jsonpath={..namespace}')
 }
-#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 source ~/.commonshellrc
 

@@ -11,11 +11,11 @@ alias cheat='function _cheat() { curl https://cht.sh/$1; }; _cheat'
 
 alias ansible="ansible -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
 alias ansible-playbook="ansible-playbook -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
-alias tf="terraform"
-alias tg="terragrunt"
-alias k="kubectl"
-alias kctx="kubectx"
-alias kns="kubens"
+#alias tf="terraform"
+#alias tg="terragrunt"
+#alias k="kubectl"
+#alias kctx="kubectx"
+#alias kns="kubens"
 alias kb="keybase"
 
 # virtualenvwrapper homedir

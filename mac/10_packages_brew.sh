@@ -65,5 +65,6 @@ brew install wakeonlan
 brew install watch
 brew install wget
 brew install youtube-dl && brew install ffmpeg
+brew install yq
 brew install zsh
 brew install z

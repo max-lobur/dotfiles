@@ -23,5 +23,5 @@ fi
 
 # check
 echo "Git settings:"
-git config --list
+git config --list | tee
 echo " ------------------------- DONE Configuring git ------------------------ "

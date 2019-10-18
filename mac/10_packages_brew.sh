@@ -44,6 +44,7 @@ brew install nmap
 brew install openssl
 brew install packer
 brew install postgresql
+brew install protobuf
 brew install perl
 brew install pv
 brew install python

@@ -17,6 +17,7 @@ brew install curl
 brew install colordiff
 brew install daemon
 brew install direnv
+brew install flatbuffers
 brew install git
 brew install --force gettext # envsubst
 brew link --force gettext

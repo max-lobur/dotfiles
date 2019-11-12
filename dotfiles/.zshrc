@@ -3,7 +3,6 @@ ZSH_THEME="bira"
 plugins=(git docker kubectl)
 
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
-export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"  # DEL
 source $ZSH/oh-my-zsh.sh
 
 # No exit on ctrl+d

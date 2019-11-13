@@ -56,6 +56,7 @@ brew install ruby
 /usr/local/bin/gem install travis
 brew install serverless
 brew install ssh-copy-id
+brew install stern
 brew install telnet
 #brew install terraform
 brew install terraform

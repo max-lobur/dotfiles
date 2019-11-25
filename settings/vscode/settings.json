@@ -24,7 +24,7 @@
     "search.location": "panel",
     "window.title": "${rootName}",
     "editor.suggestSelection": "recentlyUsedByPrefix",
-    "workbench.colorTheme": "SynthWave '84",
+    "workbench.colorTheme": "Quiet Light",
     "python.pythonPath": "/Users/mlobur/venvs/${workspaceFolderBasename}/bin/python",
     "python.venvFolders": [
         "envs",

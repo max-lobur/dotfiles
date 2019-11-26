@@ -17,7 +17,6 @@ alias ansible-playbook="ansible-playbook -e 'ansible_python_interpreter=\"/usr/b
 #alias kctx="kubectx"
 #alias kns="kubens"
 alias kb="keybase"
-alias awsume=". awsume"
 
 # virtualenvwrapper homedir
 export WORKON_HOME=~/venvs

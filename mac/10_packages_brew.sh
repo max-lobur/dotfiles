@@ -19,6 +19,7 @@ brew install daemon
 brew install direnv
 brew install flatbuffers
 brew install git
+brew install grpcurl
 brew install --force gettext # envsubst
 brew link --force gettext
 brew install gnu-tar

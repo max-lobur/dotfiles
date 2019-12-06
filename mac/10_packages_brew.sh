@@ -59,9 +59,7 @@ brew install serverless
 brew install ssh-copy-id
 brew install stern
 brew install telnet
-#brew install terraform
-brew install terraform
-brew install terraform-docs
+brew install tfenv
 brew install terragrunt
 brew install thefuck
 brew install vault

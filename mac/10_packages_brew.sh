@@ -38,6 +38,8 @@ brew install fkafkacat
 brew install kubernetes-cli
 brew install kubernetes-helm
 brew install kubectx
+brew tap blendle/blendle
+brew install kns
 brew install kube-ps1
 brew install txn2/tap/kubefwd
 brew install kops

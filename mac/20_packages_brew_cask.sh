@@ -13,15 +13,11 @@ brew cask install daisydisk
 brew cask install docker
 brew cask install dropbox
 brew cask install evernote
-brew cask install firefox
 brew cask install gitup
 brew cask install google-chrome
 brew cask install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
 brew cask install haptickey
 brew cask install iterm2
-#brew cask install java
-brew tap caskroom/versions
-brew cask install java8
 brew cask install keybase
 brew cask install kubernetic
 brew cask install minikube

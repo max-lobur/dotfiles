@@ -50,7 +50,7 @@ brew install protobuf
 brew install perl
 brew install pv
 brew install python
-brew install python2
+brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/86a44a0a552c673a05f11018459c9f5faae3becc/Formula/python@2.rb
 ln -s /usr/local/bin/python{2,}
 ln -s /usr/local/bin/pip{2,}
 brew install ruby

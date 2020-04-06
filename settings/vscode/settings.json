@@ -21,7 +21,6 @@
     "gitlens.currentLine.enabled": false,
     "editor.codeLens": false,
     "editor.scrollBeyondLastLine": false,
-    "search.location": "panel",
     "window.title": "${rootName}",
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "workbench.colorTheme": "Quiet Light",

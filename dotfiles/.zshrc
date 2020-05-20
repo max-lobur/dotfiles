@@ -73,3 +73,4 @@ function iterm2_print_user_vars() {
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 source ~/.commonshellrc
+source ~/.vgsrc

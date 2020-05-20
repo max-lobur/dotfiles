@@ -28,3 +28,4 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 source ~/.commonshellrc
+source ~/.vgsrc

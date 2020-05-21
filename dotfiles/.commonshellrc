@@ -46,6 +46,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     alias fk='fuck'
     alias kfwd='sudo kubefwd svc -n'
     eval $(thefuck --alias)
+    export VIRTUALENVWRAPPER_PYTHON='/usr/local/bin/python2'
     source /usr/local/bin/virtualenvwrapper.sh
     source /usr/local/etc/profile.d/z.sh
 

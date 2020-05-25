@@ -19,8 +19,6 @@ brew cask install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbun
 brew cask install haptickey
 brew cask install iterm2
 brew cask install keybase
-brew cask install kubernetic
-brew cask install minikube
 brew cask install ngrok
 brew cask install openoffice
 brew cask install opera
@@ -46,6 +44,5 @@ brew cask install visual-studio-code
 brew cask install vlc
 brew cask install yujitach-menumeters
 brew cask install zoomus
-
 #cask install sidestep # Securing public wifi
 #cask install transmit # FTP client

@@ -49,10 +49,12 @@ brew install postgresql
 brew install protobuf
 brew install perl
 brew install pv
-brew install python
 brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/86a44a0a552c673a05f11018459c9f5faae3becc/Formula/python@2.rb
-ln -s /usr/local/bin/python{3,}
-ln -s /usr/local/bin/pip{3,}
+brew install python3.8
+ln -sf /usr/local/opt/python@3.8/bin/python3 /usr/local/bin/python
+ln -sf /usr/local/opt/python@3.8/bin/python3 /usr/local/bin/python3
+ln -sf /usr/local/opt/python@3.8/bin/pip3 /usr/local/bin/pip
+ln -sf /usr/local/opt/python@3.8/bin/pip3 /usr/local/bin/pip3
 brew install ruby
 /usr/local/bin/gem install travis
 brew install serverless

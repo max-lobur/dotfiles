@@ -8,6 +8,7 @@ git config --global core.editor "vi"
 git config --global core.filemode true
 git config --global color.ui true
 git config --global push.default simple
+git config --global pull.ff only
 
 git config --global gitreview.scheme=ssh
 git config --global gitreview.username=max_lobur

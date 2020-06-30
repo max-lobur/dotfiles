@@ -74,3 +74,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 source ~/.commonshellrc
 source ~/.vgsrc
+
+export KUBECONFIG="$HOME/.kube/config:$HOME/.kube/config.bak" # temp

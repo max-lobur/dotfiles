@@ -1,3 +1,4 @@
+alias activate='source .venv/bin/activate'
 alias cl='clear'
 alias vag='vagrant'
 alias ll='ls -alFh'

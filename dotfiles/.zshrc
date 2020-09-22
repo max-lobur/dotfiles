@@ -24,6 +24,12 @@ export SAVEHIST=10000  # how many lines to keep in the history file
 function diff {
      colordiff -u "$@" | less
 }
+# Bash My AWS
+export PATH="$PATH:$HOME/.bash-my-aws/bin"
+source ~/.bash-my-aws/aliases
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+source ~/.bash-my-aws/bash_completion.sh
 
 # k8s PS1
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"

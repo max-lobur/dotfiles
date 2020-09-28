@@ -51,9 +51,6 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     source /usr/local/bin/virtualenvwrapper.sh
     source /usr/local/etc/profile.d/z.sh
 
-    # Shell helpers
-    export PATH=$PATH:~/git/dotfiles/sh:~/Dropbox/shell_helpers
-
     # Go Envs
     export GOPATH=$HOME/go
     export PATH=$GOPATH/bin:$PATH

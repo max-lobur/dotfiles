@@ -16,6 +16,7 @@ brew cask install evernote
 brew cask install gitup
 brew cask install google-chrome
 brew cask install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
+brew cask install pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 brew cask install haptickey
 brew cask install iterm2
 brew cask install keybase

@@ -17,16 +17,18 @@ git remote set-url origin git@github.com:max-lobur/dotfiles.git  # ssh push late
 ./init_mac.sh
 ```
 
-## CentOS
+## Ubuntu
 ```
-sudo yum -y install git
+sudo apt-get install -y install git
 git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
-./init_centos.sh
+./init_ubuntu.sh
 ```
 
-## Debian/Ubuntu
+## RHEL
 ```
-¯\_(ツ)_/¯
+sudo yum -y install git 
+git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
+./init_rhel.sh
 ```
 
 ## Adding a distro

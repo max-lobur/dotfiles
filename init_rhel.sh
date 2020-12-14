@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Init script for a secondary machine (centos)
 
 echo " --------------------------- INIT --------------------------- "
 # 1) dotfiles
@@ -8,8 +7,8 @@ for f in $(ls -d $(pwd)/dotfiles/.?* | grep -v "^/.$" | grep -v "/..$"); do
 done
 
 # 2) os-specific
-for f in $(ls ./centos/); do
-    bash ./centos/"$f"
+for f in $(ls ./rhel/); do
+    bash ./rhel/"$f"
 done
 
 # 3) commons

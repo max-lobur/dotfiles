@@ -7,13 +7,14 @@ for f in $(ls -d $(pwd)/dotfiles/.?* | grep -v "^/.$" | grep -v "/..$"); do
 done
 
 # 2) os-specific
-for f in $(ls ./mac/); do
-    bash ./mac/"$f"
+for f in $(ls ./ubuntu/); do
+    bash ./ubuntu/"$f"
 done
 
 # 3) commons
 bash ./common/packages_pip.sh
-bash ./common/setup_zsh.sh
+bash ./common/ssh_access.sh
+#bash ./common/setup_zsh.sh
 bash ./common/git_settings.sh
 
 echo " --------------------------- DONE --------------------------- "

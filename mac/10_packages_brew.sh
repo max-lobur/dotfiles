@@ -56,6 +56,7 @@ ln -sf /usr/local/opt/python@3.8/bin/python3 /usr/local/bin/python3
 ln -sf /usr/local/opt/python@3.8/bin/pip3 /usr/local/bin/pip
 ln -sf /usr/local/opt/python@3.8/bin/pip3 /usr/local/bin/pip3
 brew install ruby
+brew install romkatv/powerlevel10k/powerlevel10k
 /usr/local/bin/gem install travis
 brew install serverless
 brew install ssh-copy-id
@@ -63,7 +64,6 @@ brew install stern
 brew install telnet
 brew install tfenv
 brew install terragrunt
-brew install thefuck
 brew install vault
 brew install vim
 brew install wakeonlan

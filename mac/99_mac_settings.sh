@@ -9,6 +9,9 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 # Set a shorter Delay until key repeat
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
+# No font smoothing
+defaults -currentHost write -g AppleFontSmoothing -int 0
+
 # Show the ~/Library folder
 chflags nohidden ~/Library
 

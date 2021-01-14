@@ -7,8 +7,6 @@ ln -sf $HOME/Dropbox/settings/dot_ssh/config $HOME/.ssh/config
 touch $HOME/.ssh/agent_env
 
 # Dirs
-mkdir -p $HOME/venvs
 mkdir -p $HOME/git
-mkdir -p $HOME/Install
 mkdir -p $HOME/go
 

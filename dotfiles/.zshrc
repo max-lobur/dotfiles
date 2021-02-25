@@ -7,6 +7,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
 export ZSH=$HOME/.oh-my-zsh
 plugins=(git docker kubectl)
 
@@ -29,6 +30,9 @@ bindkey -s "\C-r" "\eqhstr\n"
 
 # direnv
 eval "$(direnv hook zsh)"
+
+# pyenv
+eval "$(pyenv init -)"
 
 export HISTSIZE=10000  # how many lines of history to keep in memory
 export SAVEHIST=10000  # how many lines to keep in the history file

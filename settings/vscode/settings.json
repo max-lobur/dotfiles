@@ -41,4 +41,10 @@
         "formatOnSave": false
       },
       "gitlens.historyExplorer.enabled": true,
+      "workbench.editorAssociations": [
+        {
+          "viewType": "jupyter.notebook.ipynb",
+          "filenamePattern": "*.ipynb"
+        }
+      ],
 }

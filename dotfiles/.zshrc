@@ -35,7 +35,7 @@ eval "$(direnv hook zsh)"
 eval "$(pyenv init -)"
 
 export HISTSIZE=10000  # how many lines of history to keep in memory
-export SAVEHIST=10000  # how many lines to keep in the history file
+export SAVEHIST=1000000  # how many lines to keep in the history file
 
 # colordiff
 function diff {

@@ -32,7 +32,7 @@ bindkey -s "\C-r" "\eqhstr\n"
 eval "$(direnv hook zsh)"
 
 # pyenv
-eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
 
 export HISTSIZE=10000  # how many lines of history to keep in memory
 export SAVEHIST=1000000  # how many lines to keep in the history file

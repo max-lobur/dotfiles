@@ -2,48 +2,45 @@
 
 brew tap caskroom/cask
 
-brew cask install 1password
-brew cask install adium
-#brew cask install aerial  # apple tv screensaver
-#brew cask install avibrazil-rdm  # hack mac screen resolution
-brew cask install appcleaner
-brew cask install balenaetcher
-brew cask install clipy
-brew cask install daisydisk
-brew cask install docker
-brew cask install dropbox
-brew cask install evernote
-brew cask install gitup
-brew cask install google-chrome
-brew cask install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
-brew cask install pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
-brew cask install haptickey
-brew cask install iterm2
-brew cask install keybase
-brew cask install ngrok
-brew cask install openoffice
-brew cask install opera
-brew cask install osxfuse && brew install sshfs
-brew cask install pgadmin4
-brew cask install pock
-brew cask install pycharm-ce
-brew cask install p4v
-brew cask install scroll-reverser
-brew cask install skype
-brew cask install slack
-brew cask install spotify
-brew cask install spotmenu
-brew cask install spectacle
-brew cask install the-unarchiver
-brew cask install telegram
-brew cask install tor-browser
-brew cask install tunnelbear
-brew cask install tunnelblick
-#brew cask install virtualbox
-#brew cask install virtualbox-extension-pack
-brew cask install visual-studio-code
-brew cask install vlc
-brew cask install yujitach-menumeters
-brew cask install zoomus
+brew install --cask 1password
+#brew install --cask avibrazil-rdm  # hack mac screen resolution
+brew install --cask appcleaner
+brew install --cask balenaetcher
+brew install --cask clipy
+brew install --cask daisydisk
+brew install --cask docker
+brew install --cask dropbox
+brew install --cask evernote
+brew install --cask gitup
+brew install --cask google-chrome
+brew install --cask gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
+brew install --cask pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+brew install --cask iterm2
+brew install --cask keybase
+brew install --cask meetingbar
+brew install --cask ngrok
+brew install --cask openoffice
+brew install --cask opera
+#brew install --cask osxfuse && brew install sshfs
+brew install --cask pgadmin4
+brew install --cask pycharm-ce
+brew install --cask p4v
+brew install --cask scroll-reverser
+brew install --cask skype
+brew install --cask slack
+brew install --cask spotify
+brew install --cask spotmenu
+brew install --cask spectacle
+brew install --cask the-unarchiver
+brew install --cask telegram
+brew install --cask tor-browser
+brew install --cask tunnelbear
+brew install --cask tunnelblick
+#brew install --cask virtualbox
+#brew install --cask virtualbox-extension-pack
+brew install --cask visual-studio-code
+brew install --cask vlc
+brew install --cask yujitach-menumeters
+brew install --cask zoomus
 #cask install sidestep # Securing public wifi
 #cask install transmit # FTP client

@@ -41,10 +41,9 @@
         "formatOnSave": false
       },
       "gitlens.historyExplorer.enabled": true,
-      "workbench.editorAssociations": [
-        {
-          "viewType": "jupyter.notebook.ipynb",
-          "filenamePattern": "*.ipynb"
-        }
-      ],
+      "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+      },
+      "plantuml.exportFormat": "png",
+      "plantuml.exportOutDir": "~/Downloads",
 }

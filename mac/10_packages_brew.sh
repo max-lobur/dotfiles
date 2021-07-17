@@ -6,7 +6,7 @@ if ! command -v brew 2>/dev/null; then
 fi
 brew doctor
 
-brew install ansible
+#brew install ansible
 brew install awscli
 brew tap fullscreen/tap
 brew install aws-rotate-key
@@ -16,7 +16,7 @@ brew install blueutil
 brew install curl
 brew install colordiff
 brew install daemon
-brew install direnv
+#brew install direnv
 brew install flatbuffers
 brew install git
 brew install grpcurl
@@ -25,8 +25,7 @@ brew link --force gettext
 brew install gnu-tar
 brew install gpg
 brew install gcc
-brew install go
-brew install groovy
+brew install goenv
 brew install htop-osx
 brew install hstr
 brew install iperf
@@ -34,13 +33,11 @@ brew install iperf3
 brew install python-yq
 brew install --HEAD jq
 brew install hub
-brew install fkafkacat
+brew install kafkacat
 brew install kubernetes-cli
 brew install kubernetes-helm
 brew install kubectx
-brew install kube-ps1
 brew install txn2/tap/kubefwd
-brew install kops
 brew install mc
 brew install nmap
 brew install openssl
@@ -50,15 +47,15 @@ brew install protobuf
 brew install perl
 brew install pv
 brew install pyenv
-brew install ruby
+brew install rbenv
 brew install romkatv/powerlevel10k/powerlevel10k
-/usr/local/bin/gem install travis
+brew isntall travis
 brew install serverless
 brew install ssh-copy-id
 brew install stern
 brew install telnet
 brew install tfenv
-brew install terragrunt
+brew install tgenv
 brew install vault
 brew install vim
 brew install wakeonlan

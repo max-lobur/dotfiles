@@ -7,7 +7,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
 export ZSH=$HOME/.oh-my-zsh
 plugins=(git docker kubectl)
 
@@ -29,13 +28,13 @@ export HSTR_PROMPT="bck-i-search: "
 bindkey -s "\C-r" "\eqhstr\n"
 
 # direnv
-eval "$(direnv hook zsh)"
+#eval "$(direnv hook zsh)"
 
 # pyenv
 eval "$(pyenv init --path)"
 
 export HISTSIZE=10000  # how many lines of history to keep in memory
-export SAVEHIST=1000000  # how many lines to keep in the history file
+export SAVEHIST=100000  # how many lines to keep in the history file
 
 # colordiff
 function diff {
@@ -57,4 +56,4 @@ function iterm2_print_user_vars() {
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 [[ ! -f ~/.vgsrc ]] || source ~/.vgsrc
-export KUBECONFIG="$HOME/.kube/config:$HOME/.kube/config.bak" # temp
+[[ ! -f ~/.kube/config.bak ]] || export KUBECONFIG="$HOME/.kube/config:$HOME/.kube/config.bak" # temp

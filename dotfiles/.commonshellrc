@@ -1,20 +1,19 @@
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Go Envs
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
+
 alias activate='source .venv/bin/activate'
 alias cl='clear'
 alias ll='ls -alFh'
 alias mc='mc -b'
-alias cask='brew cask'
 alias htop='sudo htop'
 alias watch='watch ' # watch to see all other aliases
 alias tcurl='curl -w "\n    time_namelookup:  %{time_namelookup}\n       time_connect:  %{time_connect}\n    time_appconnect:  %{time_appconnect}\n   time_pretransfer:  %{time_pretransfer}\n      time_redirect:  %{time_redirect}\n time_starttransfer:  %{time_starttransfer}\n -------------------  ----------------\n         time_total:  %{time_total}\n\n"'
 alias git-log='git log --date=short --pretty=format:"%C(124)%ad %C(24)%h %C(34)%an %C(252)%s%C(178)%d"'
-alias cheat='function _cheat() { curl https://cht.sh/$1; }; _cheat'
-
-alias ansible="ansible -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
-alias ansible-playbook="ansible-playbook -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
 alias kb="keybase"
-
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
 
 ### LINUX
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
@@ -33,10 +32,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     export DEFAULT_USER=mlobur
     source /usr/local/etc/profile.d/z.sh
-
-    # Go Envs
-    export GOPATH=$HOME/go
-    export PATH=$GOPATH/bin:$PATH
 
     # Predictable SSH authentication socket location.
     SOCK="$HOME/.ssh/agent_sock"

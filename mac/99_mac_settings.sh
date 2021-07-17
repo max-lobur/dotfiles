@@ -52,11 +52,8 @@ rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 # mkdir ~/Desktop/Screenshots
 # defaults write com.apple.screencapture location ~/Desktop/Screenshots
 
-#Keep Mac from writing .DS_Store files to network drives.
-#defaults write com.apple.desktopservices DSDontWriteNetworkStores true
-
-# To show wifi stats nearby do `airport -s`
-ln -sf /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
+# Keep Mac from writing .DS_Store files to network drives.
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 echo "Reboot to apply KeyRepeat settings."
 echo " ------------------ DONE Applying macOS settings... --------------------"

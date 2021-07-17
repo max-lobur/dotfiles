@@ -2,8 +2,8 @@
 
 echo " --------------------------- Configuring git --------------------------- "
 git config --global core.excludesfile ~/.gitignore_global
-git config --global user.name ${FULL_NAME}
-git config --global user.email ${EMEIL}
+git config --global user.name "$FULL_NAME"
+git config --global user.email "${EM}"
 git config --global core.editor ${EDITOR}
 git config --global core.filemode true
 git config --global color.ui true

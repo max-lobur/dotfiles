@@ -46,4 +46,5 @@
       },
       "plantuml.exportFormat": "png",
       "plantuml.exportOutDir": "~/Downloads",
+      "editor.minimap.enabled": false,
 }

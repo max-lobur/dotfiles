@@ -30,7 +30,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
 ### MAC
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    export DEFAULT_USER=mlobur
+    export DEFAULT_USER=${USER}
     source /usr/local/etc/profile.d/z.sh
 
     # Predictable SSH authentication socket location.

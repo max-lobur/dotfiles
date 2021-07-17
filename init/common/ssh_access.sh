@@ -7,8 +7,8 @@ chmod o-w ~/
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 
-for k in $(ls ./common/pubkeys/); do
-    key=$(cat ./common/pubkeys/"$k")
+for k in $(ls ./init/common/pubkeys/); do
+    key=$(cat ./init/common/pubkeys/"$k")
     if ! grep -q "$key" ~/.ssh/authorized_keys; then
         echo "Adding $k key"
         echo $key >> ~/.ssh/authorized_keys

@@ -8,7 +8,7 @@ brew doctor
 
 #brew install ansible
 brew install awscli
-brew tap fullscreen/tap
+brew install awsume
 brew install aws-rotate-key
 brew install aws-iam-authenticator
 brew install bash

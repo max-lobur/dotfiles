@@ -15,7 +15,7 @@ brew install --cask evernote
 brew install --cask goland
 brew install --cask google-chrome
 brew install --cask gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
-brew install --cask pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+brew install pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 brew install --cask iterm2
 brew install --cask keybase
 brew install --cask meetingbar

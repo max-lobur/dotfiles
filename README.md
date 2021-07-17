@@ -14,28 +14,15 @@ Zero friction mac and linux bootstrap
 mkdir ~/git && cd ~/git
 git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
 git remote set-url origin git@github.com:max-lobur/dotfiles.git  # ssh push later
-./init_mac.sh
+./init.sh
 ```
 
-## Ubuntu
+## Ubuntu | RHEL
 ```
 sudo apt-get install -y install git
 git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
-./init_ubuntu.sh
+./init.sh
 ```
-
-## RHEL
-```
-sudo yum -y install git 
-git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
-./init_rhel.sh
-```
-
-## Adding a distro
-The `init_<distro>.sh` script must have the following order:
-1. dotfiles
-1. os-specific scripts
-1. common scripts
 
 ## Troubleshooting
 All scripts are idempotent - hack & rerun until it works.

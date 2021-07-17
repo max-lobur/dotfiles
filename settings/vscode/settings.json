@@ -24,13 +24,6 @@
     "window.title": "${rootName}",
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "workbench.colorTheme": "Quiet Light",
-    "python.pythonPath": "/Users/mlobur/venvs/${workspaceFolderBasename}/bin/python",
-    "python.venvFolders": [
-        "envs",
-        ".pyenv",
-        ".direnv",
-        "/Users/mlobur/venvs/"
-      ],
     "python.autoComplete.addBrackets": true,
     "workbench.iconTheme": "material-icon-theme",
     "terraform.format": {

@@ -24,7 +24,7 @@ brew install --cask ngrok
 brew install --cask opera
 brew install --cask osxfuse && brew install sshfs
 brew install --cask pgadmin4
-brew install --cask pycharm-ce
+#brew install --cask pycharm-ce
 brew install --cask p4v
 brew install --cask scroll-reverser
 #brew install --cask skype

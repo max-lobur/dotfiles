@@ -49,7 +49,7 @@ brew install pv
 brew install pyenv
 brew install rbenv
 brew install romkatv/powerlevel10k/powerlevel10k
-brew isntall travis
+brew install travis
 brew install serverless
 brew install ssh-copy-id
 brew install stern

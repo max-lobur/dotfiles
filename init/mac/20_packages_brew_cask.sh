@@ -41,7 +41,7 @@ brew install --cask tunnelblick
 #brew install --cask virtualbox-extension-pack
 brew install --cask visual-studio-code
 #brew install --cask vlc
-brew install --cask yujitach-menumeters
+#brew install --cask yujitach-menumeters
 brew install --cask zoomus
 #cask install sidestep # Securing public wifi
 #cask install transmit # FTP client

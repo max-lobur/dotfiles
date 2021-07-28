@@ -17,6 +17,7 @@ git config --global alias.br "! git for-each-ref --sort='authordate' --format='%
 if [[ "$OSTYPE" == "darwin"* ]]; then
     git config --global gpg.program gpg
     git config --global user.signingkey ${GPG_KEY}
+    git config --global commit.gpgSign true
 fi
 
 # check

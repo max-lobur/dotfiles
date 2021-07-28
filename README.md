@@ -8,6 +8,7 @@
 ```
 Zero friction mac and linux bootstrap
 ![iterm2](./iterm2.png)
+The above color theme is [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
 
 ## macOS
 ```

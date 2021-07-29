@@ -48,12 +48,3 @@ autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 source ~/.bash-my-aws/bash_completion.sh
 
-# iTerm2 integrations
-function iterm2_print_user_vars() {
-    iterm2_set_user_var kubecontext $(kubectl config current-context)
-    iterm2_set_user_var kubens $(kubectl config view --minify --output 'jsonpath={..namespace}')
-}
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-[[ ! -f ~/.vgsrc ]] || source ~/.vgsrc
-[[ ! -f ~/.kube/config.bak ]] || export KUBECONFIG="$HOME/.kube/config:$HOME/.kube/config.bak" # temp

@@ -22,7 +22,7 @@ git push --set-upstream origin ${topic_branch}
 hub pull-request -b ${upstream} -F - > /tmp/last_pr_url <<MSG
 ${title}
 
-`cat PULL_REQUEST_TEMPLATE 2> /dev/null`
+`cat {,.github/,.github/PULL_REQUEST_TEMPLATE/}PULL_REQUEST_TEMPLATE{,.md} 2> /dev/null`
 MSG
 pr_url=`cat /tmp/last_pr_url`
 echo "Opening ${pr_url}"

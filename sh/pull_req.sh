@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 #
 # To make it work:
-#   brew install hub
-#   hub browse
+# - Generate a token at https://github.com/settings/tokens
+# - brew install hub
+# - cd gh_repo
+# - hub browse
+# - Login using gh username and a token
 #
 upstream_repo=`git remote get-url upstream | sed 's/git@github.com:\(.*\)\.git/\1/'`
 upstream_br=`git symbolic-ref refs/remotes/upstream/HEAD | sed 's/refs\/remotes\/upstream\/\(.*\)/\1/'`

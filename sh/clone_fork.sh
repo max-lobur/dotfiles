@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 #
 # To make it work:
-#   brew install hub
-#   hub browse
+# - Generate a token at https://github.com/settings/tokens
+# - brew install hub
+# - cd gh_repo
+# - hub browse
+# - Login using gh username and a token
 #
 usage()
 {

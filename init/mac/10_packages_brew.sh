@@ -16,7 +16,7 @@ brew install blueutil
 brew install curl
 brew install colordiff
 brew install daemon
-#brew install direnv
+brew install direnv
 brew install flatbuffers
 brew install git
 brew install grpcurl

@@ -28,7 +28,7 @@ export HSTR_PROMPT="bck-i-search: "
 bindkey -s "\C-r" "\eqhstr\n"
 
 # direnv
-#eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)"
 
 # pyenv
 eval "$(pyenv init --path)"

@@ -3,7 +3,8 @@ export LANG=en_US.UTF-8
 
 # Go Envs
 export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
 alias activate='source .venv/bin/activate'
 alias cl='clear'

@@ -3,3 +3,4 @@
 
 .DS_*
 .terraform
+*.tfstate*

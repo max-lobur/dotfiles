@@ -9,6 +9,11 @@ git config --global core.filemode true
 git config --global color.ui true
 git config --global push.default simple
 git config --global pull.ff only
+git config --global pull.rebase true
+git config --global fetch.prune true
+git config --global diff.colorMoved zebra
+git config --global rebase.autostash true
+git config --global rebase.autoSquash true
 
 git config --global alias.br "! git for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | sed -e 's-refs/heads/--' | tail"
 

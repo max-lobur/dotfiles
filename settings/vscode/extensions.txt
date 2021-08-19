@@ -1,12 +1,12 @@
 dracula-theme.theme-dracula
 eamodio.gitlens
-eryouhao.brackets-light-pro
 golang.go
 hashicorp.terraform
 jebbs.plantuml
 k--kato.intellij-idea-keybindings
 krizzdewizz.goto-last-edit-location
 mindginative.terraform-snippets
+moshfeu.compare-folders
 ms-azuretools.vscode-docker
 ms-python.python
 ms-python.vscode-pylance

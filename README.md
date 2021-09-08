@@ -10,20 +10,11 @@ Zero friction mac and linux bootstrap
 ![iterm2](./iterm2.png)
 The above color theme is [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
 
-## macOS
-```
-mkdir ~/git && cd ~/git
-git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
-git remote set-url origin git@github.com:max-lobur/dotfiles.git  # ssh push later
-./init.sh
-```
-
-## Ubuntu | RHEL
-```
-sudo apt-get install -y install git || sudo yum -y install git
-git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
-./init.sh
-```
+## How to Use
+1. Clone it / Fork it
+2. Update [vars.sh](./vars.sh)
+3. Review the [init](./init) scripts, enable/disable stuff
+4. Run `./init.sh`
 
 ## Troubleshooting
 All scripts are idempotent - hack & rerun until it works.

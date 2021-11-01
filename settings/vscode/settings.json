@@ -42,4 +42,5 @@
       "editor.minimap.enabled": false,
       "window.zoomLevel": 1,
       "terminal.integrated.copyOnSelection": true,
+      "python.analysis.completeFunctionParens": true,
 }

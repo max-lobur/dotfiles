@@ -16,6 +16,7 @@ brew install curl
 brew install colordiff
 brew install daemon
 brew install direnv
+brew install exiftool
 brew install flatbuffers
 brew install git
 brew install grpcurl

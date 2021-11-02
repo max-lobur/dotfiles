@@ -2,46 +2,46 @@
 
 brew tap caskroom/cask
 
-brew install --cask 1password
-#brew install --cask avibrazil-rdm  # hack mac screen resolution
-brew install --cask appcleaner
-brew install --cask balenaetcher
-brew install --cask clipy
-brew install --cask daisydisk
-brew install --cask docker
-brew install --cask dropbox
-brew install --cask evernote
-#brew install --cask gitup
-brew install --cask goland
-brew install --cask google-chrome
-brew install --cask gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
+brew install 1password
+#brew install avibrazil-rdm  # hack mac screen resolution
+brew install appcleaner
+brew install balenaetcher
+brew install clipy
+brew install daisydisk
+brew install docker
+brew install dropbox
+brew install evernote
+#brew install gitup
+brew install goland
+brew install google-chrome
+brew install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
 brew install pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
-brew install --cask iterm2
-brew install --cask keybase
-brew install --cask meetingbar
-brew install --cask ngrok
-#brew install --cask openoffice
-brew install --cask opera
-brew install --cask osxfuse && brew install sshfs
-brew install --cask pgadmin4
-#brew install --cask pycharm-ce
-brew install --cask p4v
-brew install --cask scroll-reverser
-#brew install --cask skype
-brew install --cask slack
-#brew install --cask spotify
-#brew install --cask spotmenu
-brew install --cask spectacle
-brew install --cask the-unarchiver
-brew install --cask telegram
-#brew install --cask tor-browser
-brew install --cask tunnelbear
-brew install --cask tunnelblick
-#brew install --cask virtualbox
-#brew install --cask virtualbox-extension-pack
-brew install --cask visual-studio-code
-#brew install --cask vlc
-#brew install --cask yujitach-menumeters
-brew install --cask zoomus
+brew install iterm2
+brew install keybase
+brew install meetingbar
+brew install ngrok
+#brew install openoffice
+brew install opera
+brew install osxfuse && brew install sshfs
+brew install pgadmin4
+#brew install pycharm-ce
+brew install p4v
+brew install scroll-reverser
+#brew install skype
+brew install slack
+#brew install spotify
+#brew install spotmenu
+brew install spectacle
+brew install the-unarchiver
+brew install telegram
+#brew install tor-browser
+brew install tunnelbear
+brew install tunnelblick
+#brew install virtualbox
+#brew install virtualbox-extension-pack
+brew install visual-studio-code
+#brew install vlc
+#brew install yujitach-menumeters
+brew install zoomus
 #cask install sidestep # Securing public wifi
 #cask install transmit # FTP client

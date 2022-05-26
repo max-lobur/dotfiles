@@ -16,6 +16,7 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 export PATH=$PATH:$HOME/git/dotfiles/sh
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 source $ZSH/oh-my-zsh.sh
 
 # No exit on ctrl+d

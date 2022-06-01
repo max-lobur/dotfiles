@@ -49,3 +49,6 @@ autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 source ~/.bash-my-aws/bash_completion.sh
 
+# Custom stuff
+export LDFLAGS="-L/usr/local/opt/openssl@3/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@3/include"

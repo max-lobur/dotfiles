@@ -30,6 +30,7 @@ brew install htop-osx
 brew install hstr
 brew install iperf
 brew install iperf3
+brew install libgfshare
 brew install python-yq
 brew install --HEAD jq
 brew install hub

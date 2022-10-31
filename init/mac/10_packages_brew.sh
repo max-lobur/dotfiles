@@ -6,10 +6,10 @@ if ! command -v brew 2>/dev/null; then
 fi
 brew doctor
 
-#brew install awscli  # use https://github.com/cloudposse/geodesic
-#brew install awsume  # use https://github.com/cloudposse/geodesic
-#brew install aws-rotate-key  # use https://github.com/cloudposse/geodesic
-#brew install aws-iam-authenticator  # use https://github.com/cloudposse/geodesic
+#brew install awscli
+#brew install awsume
+#brew install aws-rotate-key
+#brew install aws-iam-authenticator
 brew install bash
 brew install blueutil
 brew install curl
@@ -34,15 +34,15 @@ brew install libgfshare
 brew install python-yq
 brew install --HEAD jq
 brew install hub
-#brew install kafkacat  # use https://github.com/cloudposse/geodesic
-#brew install kubernetes-cli  # use https://github.com/cloudposse/geodesic
-#brew install kubernetes-helm  # use https://github.com/cloudposse/geodesic
-#brew install kubectx  # use https://github.com/cloudposse/geodesic
-#brew install txn2/tap/kubefwd  # use https://github.com/cloudposse/geodesic
+#brew install kafkacat
+#brew install kubernetes-cli
+#brew install kubernetes-helm
+#brew install kubectx
+#brew install txn2/tap/kubefwd
 brew install mc
 brew install nmap
 brew install openssl
-#brew install packer  # use https://github.com/cloudposse/geodesic
+#brew install packer
 brew install postgresql
 brew install protobuf
 brew install perl
@@ -53,11 +53,11 @@ brew install romkatv/powerlevel10k/powerlevel10k
 brew install travis
 brew install serverless
 brew install ssh-copy-id
-#brew install stern  # use https://github.com/cloudposse/geodesic
+#brew install stern
 brew install telnet
 brew install tfenv
 brew install tgenv
-#brew install vault  # use https://github.com/cloudposse/geodesic
+#brew install vault
 brew install vim
 brew install wakeonlan
 brew install watch

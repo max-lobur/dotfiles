@@ -24,12 +24,12 @@ brew install ngrok
 brew install opera
 brew install osxfuse && brew install sshfs
 brew install pgadmin4
-#brew install pycharm-ce
+brew install pycharm-ce
 brew install p4v
 brew install scroll-reverser
 #brew install skype
 brew install slack
-#brew install spotify
+brew install spotify
 #brew install spotmenu
 brew install spectacle
 brew install the-unarchiver
@@ -40,7 +40,7 @@ brew install tunnelblick
 #brew install virtualbox
 #brew install virtualbox-extension-pack
 brew install visual-studio-code
-#brew install vlc
+brew install vlc
 #brew install yujitach-menumeters
 brew install zoomus
 #cask install sidestep # Securing public wifi

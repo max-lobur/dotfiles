@@ -50,8 +50,10 @@ brew install pv
 brew install pyenv
 brew install rbenv
 brew install romkatv/powerlevel10k/powerlevel10k
+brew install rsync
 brew install travis
 brew install serverless
+brew install smartmontools
 brew install ssh-copy-id
 #brew install stern
 brew install telnet

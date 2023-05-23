@@ -23,9 +23,7 @@
     "editor.scrollBeyondLastLine": false,
     "window.title": "${rootName}",
     "editor.suggestSelection": "recentlyUsedByPrefix",
-    "workbench.colorTheme": "Quiet Light",
     "python.autoComplete.addBrackets": true,
-    "workbench.iconTheme": "material-icon-theme",
     "terraform.format": {
         "enable": true,
         "ignoreExtensionsOnSave": [
@@ -43,4 +41,10 @@
       "window.zoomLevel": 1,
       "terminal.integrated.copyOnSelection": true,
       "python.analysis.completeFunctionParens": true,
+      "[python]": {
+        "editor.formatOnType": true
+      },
+      "extensions.ignoreRecommendations": true,
+      "editor.inlineSuggest.enabled": true,
+      "workbench.colorTheme": "Dracula",
 }

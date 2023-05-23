@@ -2,15 +2,7 @@
 [
     {
         "key": "cmd+e",
-        "command": "-workbench.action.openRecent"
-    },
-    {
-        "key": "cmd+e",
         "command": "--workbench.action.openRecent"
-    },
-    {
-        "key": "cmd+e",
-        "command": "workbench.action.openNextRecentlyUsedEditorInGroup"
     },
     {
         "key": "ctrl+tab",
@@ -80,5 +72,22 @@
         "key": "f2",
         "command": "--editor.action.rename",
         "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findWithSelection"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-workbench.action.openPreviousEditorFromHistory",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+p",
+        "command": "-workbench.action.quickOpen"
     }
 ]

@@ -45,6 +45,7 @@ brew install mc
 brew install nmap
 brew install openssl
 #brew install packer
+brew install parallel
 brew install postgresql
 brew install protobuf
 brew install perl

@@ -19,7 +19,6 @@
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.currentLine.enabled": false,
-    "editor.codeLens": false,
     "editor.scrollBeyondLastLine": false,
     "window.title": "${rootName}",
     "editor.suggestSelection": "recentlyUsedByPrefix",
@@ -47,4 +46,8 @@
       "extensions.ignoreRecommendations": true,
       "editor.inlineSuggest.enabled": true,
       "workbench.colorTheme": "Dracula",
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
 }

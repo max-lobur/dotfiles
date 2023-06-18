@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-brew tap caskroom/cask
-
 brew install 1password
 #brew install avibrazil-rdm  # hack mac screen resolution
 brew install appcleaner

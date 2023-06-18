@@ -50,4 +50,5 @@
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
+    "go.toolsManagement.autoUpdate": true,
 }

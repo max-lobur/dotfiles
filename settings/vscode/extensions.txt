@@ -1,7 +1,12 @@
+atlassian.atlascode
 dracula-theme.theme-dracula
+eamodio.gitlens
 GitHub.copilot
+github.vscode-github-actions
+GitHub.vscode-pull-request-github
 golang.go
 hashicorp.terraform
+janisdd.vscode-edit-csv
 jebbs.plantuml
 k--kato.intellij-idea-keybindings
 krizzdewizz.goto-last-edit-location
@@ -9,7 +14,9 @@ moshfeu.compare-folders
 ms-azuretools.vscode-docker
 ms-python.python
 ms-python.vscode-pylance
+ms-vsliveshare.vsliveshare
 msysyamamoto.vscode-fluentd
 PKief.material-icon-theme
-uloco.theme-bluloco-light
+redhat.vscode-yaml
+samuelcolvin.jinjahtml
 wholroyd.jinja

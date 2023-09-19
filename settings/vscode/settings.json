@@ -3,9 +3,7 @@
     "files.autoSaveDelay": 100,
     "terminal.integrated.shell.osx": "/usr/local/bin/bash",
     "workbench.sideBar.location": "left",
-    "workbench.statusBar.visible": false,
     "workbench.statusBar.feedback.visible": false,
-    "workbench.activityBar.visible": false,
     "workbench.editor.showTabs": false,
     "explorer.openEditors.visible": 0,
     "gitlens.advanced.messages": {
@@ -36,7 +34,6 @@
       },
       "plantuml.exportFormat": "png",
       "plantuml.exportOutDir": "~/Downloads",
-      "editor.minimap.enabled": false,
       "window.zoomLevel": 1,
       "terminal.integrated.copyOnSelection": true,
       "python.analysis.completeFunctionParens": true,
@@ -51,4 +48,26 @@
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "go.toolsManagement.autoUpdate": true,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.minimap.enabled": false,
+    "python.languageServer": "Pylance",
+    "yaml.schemas": {
+      "file:///Users/mlobur/.vscode/extensions/atlassian.atlascode-3.0.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.jira.enabled": true,
+    "redhat.telemetry.enabled": true,
+    "atlascode.bitbucket.enabled": false,
+    "atlascode.jira.jqlList": [
+      {
+        "id": "b5bd7810-665e-4a00-a886-d98e2a273018",
+        "siteId": "605b184e-77f6-45ca-879f-f7ac90dd97f5",
+        "name": "Sprint",
+        "query": "assignee = currentUser() AND Sprint in openSprints() AND status != Done",
+        "enabled": true,
+        "monitor": true
+      }
+    ],
+    "atlascode.jira.explorer.enabled": true,
+    "atlascode.jira.explorer.monitorEnabled": false,
+    "atlascode.jira.explorer.fetchAllQueryResults": true,
 }

@@ -70,4 +70,5 @@
     "atlascode.jira.explorer.enabled": true,
     "atlascode.jira.explorer.monitorEnabled": false,
     "atlascode.jira.explorer.fetchAllQueryResults": true,
+    "git.confirmSync": false,
 }

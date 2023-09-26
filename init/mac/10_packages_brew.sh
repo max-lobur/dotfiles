@@ -33,6 +33,7 @@ brew install hstr
 brew install iperf
 brew install iperf3
 brew install libgfshare
+brew install make
 brew install python-yq
 brew install --HEAD jq
 brew install hub
@@ -44,7 +45,7 @@ brew install hub
 brew install mc
 brew install nmap
 brew install openssl
-#brew install packer
+brew install packer
 brew install parallel
 brew install postgresql
 brew install protobuf
@@ -82,7 +83,6 @@ brew install daisydisk
 brew install docker
 brew install dropbox
 brew install evernote
-#brew install gitup
 brew install google-chrome
 brew install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
 brew install pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf

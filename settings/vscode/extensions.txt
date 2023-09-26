@@ -2,6 +2,7 @@ atlassian.atlascode
 dracula-theme.theme-dracula
 eamodio.gitlens
 GitHub.copilot
+GitHub.copilot-chat
 github.vscode-github-actions
 GitHub.vscode-pull-request-github
 golang.go

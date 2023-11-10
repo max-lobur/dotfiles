@@ -22,8 +22,8 @@ alias k="kubectl"
 alias kns="kubens"
 
 # Chrome HAR parsers https://gist.github.com/cvan/03ffa0c71317cb6b0b95a41ab189b097
-alias hurlp='pbpaste | jq ".log.entries" | tee >(jq --raw-output "[.[] | .request.url] | sort | unique | .[]")'
-alias hurld='pbpaste | jq ".log.entries" | jq --raw-output "[.[] | .request.url] | sort | unique | .[]" | harurls | tee >(xargs -n 1 curl -O $1)'
+alias hurlp='pbpaste | jq ".log.entries" | jq --raw-output "[.[] | .request.url] | sort | unique | .[]"'
+alias hurld='pbpaste | jq ".log.entries" | jq --raw-output "[.[] | .request.url] | sort | unique | .[]" | awk -F/ '\''{print $1"//"$3}'\'' | uniq'
 
 ### LINUX
 if [[ "$OSTYPE" == "linux-gnu" ]]; then

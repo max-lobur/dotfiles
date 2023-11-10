@@ -42,7 +42,6 @@
       },
       "extensions.ignoreRecommendations": true,
       "editor.inlineSuggest.enabled": true,
-      "workbench.colorTheme": "Dracula",
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.enabled": false,
@@ -71,4 +70,6 @@
     "atlascode.jira.explorer.monitorEnabled": false,
     "atlascode.jira.explorer.fetchAllQueryResults": true,
     "git.confirmSync": false,
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Dracula Soft",
 }

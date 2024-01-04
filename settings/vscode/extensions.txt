@@ -3,6 +3,7 @@ dracula-theme.theme-dracula
 eamodio.gitlens
 GitHub.copilot
 GitHub.copilot-chat
+GitHub.github-vscode-theme
 github.vscode-github-actions
 GitHub.vscode-pull-request-github
 golang.go
@@ -20,4 +21,5 @@ msysyamamoto.vscode-fluentd
 PKief.material-icon-theme
 redhat.vscode-yaml
 samuelcolvin.jinjahtml
+smoore.yaml-path
 wholroyd.jinja

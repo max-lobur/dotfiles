@@ -1,4 +1,3 @@
-atlassian.atlascode
 dracula-theme.theme-dracula
 eamodio.gitlens
 GitHub.copilot
@@ -16,7 +15,6 @@ moshfeu.compare-folders
 ms-azuretools.vscode-docker
 ms-python.python
 ms-python.vscode-pylance
-ms-vsliveshare.vsliveshare
 msysyamamoto.vscode-fluentd
 PKief.material-icon-theme
 redhat.vscode-yaml

@@ -11,6 +11,7 @@ hashicorp.terraform
 janisdd.vscode-edit-csv
 jebbs.plantuml
 k--kato.intellij-idea-keybindings
+kevinrose.vsc-python-indent
 krizzdewizz.goto-last-edit-location
 moshfeu.compare-folders
 ms-azuretools.vscode-docker

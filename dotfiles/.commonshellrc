@@ -9,6 +9,10 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 # Brew
 export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 
+# AWS
+export AWS_PAGER=""
+
+# Aliases
 alias activate='source .venv/bin/activate'
 alias cl='clear'
 alias ll='ls -alFh'
@@ -20,7 +24,6 @@ alias git-log='git log --date=short --pretty=format:"%C(124)%ad %C(24)%h %C(34)%
 alias kb="keybase"
 alias k="kubectl"
 alias kns="kubens"
-
 # Chrome HAR parsers https://gist.github.com/cvan/03ffa0c71317cb6b0b95a41ab189b097
 alias hurlp='pbpaste | jq ".log.entries" | jq --raw-output "[.[] | .request.url] | sort | unique | .[]"'
 alias hurld='pbpaste | jq ".log.entries" | jq --raw-output "[.[] | .request.url] | sort | unique | .[]" | awk -F/ '\''{print $1"//"$3}'\'' | uniq'

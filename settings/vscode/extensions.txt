@@ -15,6 +15,7 @@ kevinrose.vsc-python-indent
 krizzdewizz.goto-last-edit-location
 moshfeu.compare-folders
 ms-azuretools.vscode-docker
+ms-python.black-formatter
 ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance

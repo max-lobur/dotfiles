@@ -61,3 +61,6 @@ export CPPFLAGS="-I/usr/local/opt/openssl@3/include"
 
 # To customize prompt, run `p10k configure` or edit ~/git/dotfiles/dotfiles/.p10k.zsh.
 [[ ! -f ~/git/dotfiles/dotfiles/.p10k.zsh ]] || source ~/git/dotfiles/dotfiles/.p10k.zsh
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

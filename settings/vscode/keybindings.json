@@ -9,7 +9,7 @@
         "command": "-workbench.action.openNextRecentlyUsedEditorInGroup"
     },
     {
-        "key": "shift+cmd+f",
+        "key": "shift+alt+f",
         "command": "filesExplorer.findInFolder"
     },
     {
@@ -99,5 +99,15 @@
         "key": "shift+escape",
         "command": "-workbench.action.terminal.toggleTerminal",
         "when": "terminal.active"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "filesExplorer.findInFolder",
+        "when": "explorerResourceIsFolder && filesExplorerFocus"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-filesExplorer.findInFolder",
+        "when": "explorerResourceIsFolder && filesExplorerFocus"
     }
 ]

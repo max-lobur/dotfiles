@@ -9,3 +9,4 @@ touch $HOME/.ssh/agent_env
 # Dirs
 mkdir -p $HOME/git
 mkdir -p $HOME/go/{bin,src,pkg}
+mkdir -p $HOME/.nvm

@@ -59,11 +59,10 @@ brew install travis
 brew install serverless
 brew install smartmontools
 brew install ssh-copy-id
-#brew install stern
+brew install stern
 brew install telnet
-brew install tfenv
-brew install tgenv
-#brew install vault
+brew tap tofuutils/tap
+brew install tofuenv
 brew install vim
 brew install wakeonlan
 brew install watch
@@ -90,7 +89,6 @@ brew install iterm2
 brew install keybase
 brew install meetingbar
 brew install ngrok
-#brew install openoffice
 brew install opera
 brew install osxfuse && brew install sshfs
 brew install pgadmin4

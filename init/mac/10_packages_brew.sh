@@ -55,19 +55,14 @@ brew install pyenv
 brew install rbenv
 brew install romkatv/powerlevel10k/powerlevel10k
 brew install rsync
-brew install travis
-brew install serverless
-brew install smartmontools
 brew install ssh-copy-id
 brew install stern
 brew install telnet
 brew tap tofuutils/tap
 brew install tofuenv
 brew install vim
-brew install wakeonlan
 brew install watch
 brew install wget
-brew install youtube-dl && brew install ffmpeg
 brew install zsh
 brew install z
 
@@ -76,33 +71,21 @@ brew install z
 #
 brew install 1password
 brew install appcleaner
-brew install balenaetcher
 brew install clipy
 brew install daisydisk
 brew install docker
 brew install dropbox
-brew install evernote
 brew install google-chrome
 brew install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
 brew install pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 brew install iterm2
-brew install keybase
-brew install meetingbar
 brew install ngrok
 brew install opera
 brew install osxfuse && brew install sshfs
 brew install pgadmin4
 brew install scroll-reverser
 brew install slack
-brew install spotify
-brew install spectacle
 brew install the-unarchiver
 brew install tunnelbear
-brew install tunnelblick
-#brew install virtualbox
-#brew install virtualbox-extension-pack
-brew install visual-studio-code
 brew install vlc
 brew install zoomus
-#cask install sidestep # Securing public wifi
-#cask install transmit # FTP client

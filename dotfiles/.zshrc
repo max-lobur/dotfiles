@@ -28,15 +28,6 @@ export HSTR_CONFIG=prompt-bottom,keywords-matching,raw-history-view
 export HSTR_PROMPT="bck-i-search: "
 bindkey -s "\C-r" "\eqhstr\n"
 
-# direnv
-eval "$(direnv hook zsh)"
-
-# pyenv
-eval "$(pyenv init --path)"
-
-# rbenv
-eval "$(rbenv init - zsh)"
-
 export HISTSIZE=10000  # how many lines of history to keep in memory
 export SAVEHIST=100000  # how many lines to keep in the history file
 

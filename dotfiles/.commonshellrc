@@ -1,6 +1,15 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# direnv
+eval "$(direnv hook zsh)"
+
+# pyenv
+eval "$(pyenv init --path)"
+
+# rbenv
+eval "$(rbenv init - zsh)"
+
 # Go Envs
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"

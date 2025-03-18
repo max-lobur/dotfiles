@@ -7,6 +7,9 @@ eval "$(pyenv init --path)"
 # rbenv
 eval "$(rbenv init - zsh)"
 
+# direnv
+eval "$(direnv hook zsh)"
+
 # Go Envs
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"
@@ -19,9 +22,6 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
 # Brew
 export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
-
-# direnv
-eval "$(direnv hook zsh)"
 
 # AWS
 export AWS_PAGER=""

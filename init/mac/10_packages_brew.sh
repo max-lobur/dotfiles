@@ -61,6 +61,7 @@ brew install telnet
 brew tap tofuutils/tap
 brew install tofuenv
 brew install vim
+brew install volta
 brew install watch
 brew install wget
 brew install zsh

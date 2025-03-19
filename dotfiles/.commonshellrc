@@ -10,6 +10,11 @@ eval "$(rbenv init - zsh)"
 # direnv
 eval "$(direnv hook zsh)"
 
+# volta
+export VOLTA_HOME=$HOME/.volta
+export PATH="$VOLTA_HOME/bin:$PATH"
+export VOLTA_FEATURE_PNPM=1
+
 # Go Envs
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"

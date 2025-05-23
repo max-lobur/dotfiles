@@ -21,6 +21,7 @@ export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
 # Brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 
 # AWS

@@ -15,6 +15,3 @@ The above color theme is [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
 2. Update [vars.sh](./vars.sh)
 3. Review the [init](./init) scripts, enable/disable stuff
 4. Run `./init.sh`
-
-## Troubleshooting
-All scripts are idempotent - hack & rerun until it works.

@@ -38,7 +38,7 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Dock
 defaults write com.apple.dock magnification -boolean false
-defaults write com.apple.dock tilesize -integer 45
+defaults write com.apple.dock tilesize -integer 60
 defaults write com.apple.dock minimize-to-application -bool true
 defaults write com.apple.dock expose-animation-duration -float 0.1;
 killall Dock # restart

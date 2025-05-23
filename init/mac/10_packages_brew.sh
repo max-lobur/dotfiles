@@ -3,6 +3,7 @@
 if ! command -v brew 2>/dev/null; then
     sudo xcode-select --install
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 brew doctor
 

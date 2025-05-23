@@ -109,5 +109,9 @@
         "key": "shift+cmd+f",
         "command": "-filesExplorer.findInFolder",
         "when": "explorerResourceIsFolder && filesExplorerFocus"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
     }
 ]

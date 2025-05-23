@@ -74,7 +74,7 @@ brew install z
 brew install 1password
 brew install appcleaner
 brew install clipy
-brew install code
+brew install visual-studio-code
 brew install cursor
 brew install daisydisk
 brew install docker

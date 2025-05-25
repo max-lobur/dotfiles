@@ -10,7 +10,12 @@ fi
 export ZSH=$HOME/.oh-my-zsh
 #plugins=(git docker kubectl)
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+# Powerlevel10k
+if [[ $(uname -m) == "arm64" ]]; then
+    source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+else
+    source ~/powerlevel10k/powerlevel10k.zsh-theme
+fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

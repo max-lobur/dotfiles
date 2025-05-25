@@ -21,8 +21,11 @@ export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
 # Brew
-# eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(/usr/local/bin/brew shellenv)"
+if [[ $(uname -m) == "arm64" ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+    eval "$(/usr/local/bin/brew shellenv)"
+fi
 export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 
 # AWS

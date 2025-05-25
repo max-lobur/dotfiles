@@ -3,7 +3,11 @@
 if ! command -v brew 2>/dev/null; then
     sudo xcode-select --install
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+    if [[ $(uname -m) == "arm64" ]]; then
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+    else
+        eval "$(/usr/local/bin/brew shellenv)"
+    fi
 fi
 brew doctor
 

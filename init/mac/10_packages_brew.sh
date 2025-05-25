@@ -41,19 +41,16 @@ brew install libgfshare
 brew install make
 brew install python-yq
 brew install --HEAD jq
-brew install hub
 #brew install kafkacat
 #brew install kubernetes-cli
 #brew install kubernetes-helm
 #brew install kubectx
 #brew install txn2/tap/kubefwd
-brew install mc
 brew install nmap
 brew install openssl
-brew install packer
+# brew install packer
 brew install parallel
 brew install postgresql
-brew install protobuf
 brew install perl
 brew install pv
 brew install pyenv
@@ -61,7 +58,7 @@ brew install rbenv
 brew install romkatv/powerlevel10k/powerlevel10k
 brew install rsync
 brew install ssh-copy-id
-brew install stern
+# brew install stern
 brew install telnet
 brew install tofuenv
 brew install vim

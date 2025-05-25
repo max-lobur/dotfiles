@@ -19,7 +19,6 @@ export TERM=xterm-color
 export CLICOLOR=1
 
 source ~/.commonshellrc
-source ~/.vgsrc
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

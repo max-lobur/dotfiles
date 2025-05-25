@@ -8,12 +8,12 @@ echo "> ll ${conf_dir}"
 ls -la "${conf_dir}"
 
 # Extensions
-# code --list-extensions > settings/vscode/extensions.txt
+# cursor --list-extensions > settings/vscode/extensions.txt
 extensions="${HOME}/git/dotfiles/settings/vscode/extensions.txt"
 while IFS= read -r ext
 do
     echo " ==> Installing: ${ext}"
-    code --install-extension ${ext}
+    cursor --install-extension ${ext}
 done < "${extensions}"
 echo " === VSCode Extensions: === "
-code --list-extensions
+cursor --list-extensions

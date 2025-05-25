@@ -59,7 +59,6 @@ brew install rsync
 brew install ssh-copy-id
 brew install stern
 brew install telnet
-brew tap tofuutils/tap
 brew install tofuenv
 brew install vim
 brew install volta
@@ -74,7 +73,6 @@ brew install z
 brew install 1password
 brew install appcleaner
 brew install clipy
-brew install visual-studio-code
 brew install cursor
 brew install daisydisk
 brew install docker
@@ -85,7 +83,6 @@ brew install pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac"
 brew install iterm2
 brew install ngrok
 brew install opera
-brew install osxfuse && brew install sshfs
 brew install pgadmin4
 brew install scroll-reverser
 brew install slack

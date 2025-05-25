@@ -55,7 +55,7 @@ brew install perl
 brew install pv
 brew install pyenv
 brew install rbenv
-brew install romkatv/powerlevel10k/powerlevel10k
+brew install powerlevel10k
 brew install rsync
 brew install ssh-copy-id
 # brew install stern

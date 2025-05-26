@@ -79,8 +79,8 @@ brew install daisydisk
 brew install docker
 brew install dropbox
 brew install google-chrome
-brew install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
-brew install pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+#brew install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
+#brew install pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 brew install iterm2
 brew install ngrok
 brew install opera

@@ -76,7 +76,8 @@ brew install appcleaner
 brew install clipy
 brew install cursor
 brew install daisydisk
-brew install docker
+brew install --cask docker
+brew install docker-compose
 brew install dropbox
 brew install google-chrome
 #brew install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle

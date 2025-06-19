@@ -45,7 +45,6 @@
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
     "go.toolsManagement.autoUpdate": true,
     "git.openRepositoryInParentFolders": "never",
     "editor.minimap.enabled": false,

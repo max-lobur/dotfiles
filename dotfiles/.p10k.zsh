@@ -28,9 +28,15 @@
   # Zsh >= 5.1 is required.
   [[ $ZSH_VERSION == (5.<1->*|<6->.*) ]] || return
 
+  # Custom ➜ arrow at the beginning of the prompt
+  function prompt_arrow() {
+    p10k segment -f 2 -t '➜'
+  }
+
   # The list of segments shown on the left. Fill it with the most important segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # os_icon               # os identifier
+    arrow                   # custom arrow
     dir                     # current directory
     vcs                     # git status
     prompt_char             # prompt symbol

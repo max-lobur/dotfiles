@@ -8,7 +8,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export ZSH=$HOME/.oh-my-zsh
-#plugins=(git docker kubectl)
+
+# export ZSH_THEME="dracula"
 
 # Powerlevel10k
 if [[ $(uname -m) == "arm64" ]]; then
@@ -18,6 +19,7 @@ else
 fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 
 export PATH=$PATH:$HOME/git/dotfiles/sh
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
@@ -54,3 +56,6 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 # clang
 export LDFLAGS="-L/usr/local/opt/openssl@3/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@3/include"
+
+# To customize prompt, run `p10k configure` or edit ~/git/dotfiles/dotfiles/.p10k.zsh.
+[[ ! -f ~/git/dotfiles/dotfiles/.p10k.zsh ]] || source ~/git/dotfiles/dotfiles/.p10k.zsh

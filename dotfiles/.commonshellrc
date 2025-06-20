@@ -10,15 +10,6 @@ else
 fi
 export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 
-# pyenv
-eval "$(pyenv init --path)"
-
-# rbenv
-eval "$(rbenv init - zsh)"
-
-# direnv
-eval "$(direnv hook zsh)"
-
 # volta
 export VOLTA_HOME=$HOME/.volta
 export PATH="$VOLTA_HOME/bin:$PATH"

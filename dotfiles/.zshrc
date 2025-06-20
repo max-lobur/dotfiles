@@ -26,6 +26,15 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 source $ZSH/oh-my-zsh.sh
 
+# pyenv
+eval "$(pyenv init --path)"
+
+# rbenv
+eval "$(rbenv init - zsh)"
+
+# direnv
+eval "$(direnv hook zsh)"
+
 # No exit on ctrl+d
 set -o ignoreeof
 

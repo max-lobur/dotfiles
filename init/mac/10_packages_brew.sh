@@ -76,7 +76,7 @@ brew install appcleaner
 brew install clipy
 brew install cursor
 brew install daisydisk
-brew install --cask docker-desktop
+brew install docker-desktop
 brew install docker-compose
 brew install dropbox
 brew install google-chrome

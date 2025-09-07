@@ -66,5 +66,6 @@
   "gitlens.launchpad.indicator.enabled": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "cursor-retrieval.canAttemptGithubLogin": false,
-  "workbench.colorTheme": "GitHub Dark"
+"workbench.colorTheme": "GitHub Dark",
+"redhat.telemetry.enabled": false
 }

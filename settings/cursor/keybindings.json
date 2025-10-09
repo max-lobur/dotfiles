@@ -113,5 +113,25 @@
     {
         "key": "cmd+i",
         "command": "composerMode.agent"
+    },
+    {
+        "key": "alt+e",
+        "command": "cursor.composer.openAgentWindow",
+        "when": "cursor.appLayoutEnabled && cursor.appLayout != 'agent'"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-cursor.composer.openAgentWindow",
+        "when": "cursor.appLayoutEnabled && cursor.appLayout != 'agent'"
+    },
+    {
+        "key": "alt+e",
+        "command": "cursor.composer.openEditorWindow",
+        "when": "cursor.appLayoutEnabled && cursor.appLayout == 'agent'"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-cursor.composer.openEditorWindow",
+        "when": "cursor.appLayoutEnabled && cursor.appLayout == 'agent'"
     }
 ]

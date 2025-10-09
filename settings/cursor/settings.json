@@ -47,7 +47,7 @@
   "go.toolsManagement.autoUpdate": true,
   "git.openRepositoryInParentFolders": "never",
   "editor.minimap.enabled": false,
-  "python.languageServer": "Pylance",
+  "python.languageServer": "None",
   "git.confirmSync": false,
   "explorer.confirmDelete": false,
   "githubPullRequests.pullBranch": "never",
@@ -67,5 +67,7 @@
   "typescript.updateImportsOnFileMove.enabled": "never",
   "cursor-retrieval.canAttemptGithubLogin": false,
 "workbench.colorTheme": "GitHub Dark",
-"redhat.telemetry.enabled": false
+"redhat.telemetry.enabled": false,
+"biome.suggestInstallingGlobally": false,
+"cursorpyright.shouldImportPylanceSettings": "never"
 }

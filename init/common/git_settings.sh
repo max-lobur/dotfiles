@@ -14,6 +14,7 @@ git config --global fetch.prune true
 git config --global diff.colorMoved zebra
 git config --global rebase.autostash true
 git config --global rebase.autoSquash true
+git config --global init.defaultBranch main
 
 git config --global alias.br "! git for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | sed -e 's-refs/heads/--' | tail"
 

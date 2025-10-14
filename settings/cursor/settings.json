@@ -69,5 +69,7 @@
 "workbench.colorTheme": "GitHub Dark",
 "redhat.telemetry.enabled": false,
 "biome.suggestInstallingGlobally": false,
-"cursorpyright.shouldImportPylanceSettings": "never"
+"cursorpyright.shouldImportPylanceSettings": "never",
+"cursor.composer.shouldChimeAfterChatFinishes": true,
+"python.createEnvironment.trigger": "off"
 }

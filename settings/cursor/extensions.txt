@@ -1,11 +1,6 @@
-anysphere.pyright
-biomejs.biome
 bradlc.vscode-tailwindcss
-dracula-theme.theme-dracula
-eamodio.gitlens
 github.github-vscode-theme
 github.vscode-pull-request-github
-golang.go
 hashicorp.terraform
 janisdd.vscode-edit-csv
 jebbs.plantuml
@@ -15,7 +10,6 @@ krizzdewizz.goto-last-edit-location
 ms-python.black-formatter
 ms-python.debugpy
 ms-python.python
-ms-python.vscode-pylance
 ms-vscode.js-debug-nightly
 pkief.material-icon-theme
 redhat.vscode-yaml

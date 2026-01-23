@@ -73,5 +73,6 @@
     "cursorpyright.shouldImportPylanceSettings": "never",
     "cursor.composer.shouldChimeAfterChatFinishes": true,
     "python.createEnvironment.trigger": "off",
-    "workbench.editor.enablePreview": false
+    "workbench.editor.enablePreview": false,
+    "comments.thread.confirmOnCollapse": "never"
 }

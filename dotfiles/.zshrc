@@ -24,6 +24,7 @@ fi
 export PATH=$PATH:$HOME/git/dotfiles/sh
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH="/usr/local/opt/openssl@3/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 source $ZSH/oh-my-zsh.sh
 
 # pyenv

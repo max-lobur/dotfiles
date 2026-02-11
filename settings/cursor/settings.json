@@ -74,5 +74,6 @@
     "cursor.composer.shouldChimeAfterChatFinishes": true,
     "python.createEnvironment.trigger": "off",
     "workbench.editor.enablePreview": false,
-    "comments.thread.confirmOnCollapse": "never"
+    "comments.thread.confirmOnCollapse": "never",
+    "cursorpyright.disableLanguageServices": true
 }

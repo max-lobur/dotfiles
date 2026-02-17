@@ -1,3 +1,4 @@
+anysphere.cursorpyright
 bradlc.vscode-tailwindcss
 github.github-vscode-theme
 github.vscode-pull-request-github
@@ -7,6 +8,7 @@ jebbs.plantuml
 k--kato.intellij-idea-keybindings
 kevinrose.vsc-python-indent
 krizzdewizz.goto-last-edit-location
+meta.pyrefly
 ms-python.black-formatter
 ms-python.debugpy
 ms-python.python

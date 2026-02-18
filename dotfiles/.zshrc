@@ -24,6 +24,7 @@ fi
 export PATH=$PATH:$HOME/git/dotfiles/sh
 export PATH=/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
+alias ll='ls -lah'
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"

@@ -59,3 +59,8 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # To customize prompt, run `p10k configure` or edit ~/git/dotfiles/dotfiles/.p10k.zsh.
 [[ ! -f ~/git/dotfiles/dotfiles/.p10k.zsh ]] || source ~/git/dotfiles/dotfiles/.p10k.zsh
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/lobur/.lmstudio/bin"
+# End of LM Studio CLI section
+

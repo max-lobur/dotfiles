@@ -22,3 +22,8 @@ source ~/.commonshellrc
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/lobur/.lmstudio/bin"
+# End of LM Studio CLI section
+

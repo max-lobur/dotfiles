@@ -3,20 +3,11 @@
 if ! command -v brew 2>/dev/null; then
     sudo xcode-select --install
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    if [[ $(uname -m) == "arm64" ]]; then
-        eval "$(/opt/homebrew/bin/brew shellenv)"
-    else
-        eval "$(/usr/local/bin/brew shellenv)"
-    fi
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 brew doctor
 
-#brew install awscli
-#brew install awsume
-#brew install aws-rotate-key
-#brew install aws-iam-authenticator
 brew install bash
-brew install blueutil
 brew install curl
 brew install colordiff
 brew install daemon
@@ -48,7 +39,7 @@ brew install --HEAD jq
 #brew install txn2/tap/kubefwd
 brew install nmap
 brew install openssl
-# brew install packer
+brew install packer
 brew install parallel
 brew install postgresql
 brew install perl
@@ -80,12 +71,7 @@ brew install docker-desktop
 brew install docker-compose
 brew install dropbox
 brew install google-chrome
-#brew install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
-#brew install pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 brew install iterm2
-brew install ngrok
-brew install opera
-brew install pgadmin4
 brew install scroll-reverser
 brew install slack
 brew install the-unarchiver

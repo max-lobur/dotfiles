@@ -1,6 +1,6 @@
 export USER="lobur"
 export FULL_NAME="Max Lobur"
-export EM="max_lobur""@""outlook.com"
-export GPG_KEY="731422E176F3B92639F96E8BB38ECAE18FED0007"
-
+export E1="max_lobur"
+export E2="outlook.com"
+export EM="${E1}@${E2}"
 export EDITOR="vi"

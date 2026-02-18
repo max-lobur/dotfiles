@@ -1,7 +1,7 @@
 {
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 100,
-    "terminal.integrated.shell.osx": "/usr/local/bin/bash",
+    "terminal.integrated.shell.osx": "/opt/homebrew/bin/bash",
     "workbench.statusBar.feedback.visible": false,
     "workbench.editor.showTabs": "single",
     "explorer.openEditors.visible": 0,
@@ -75,5 +75,6 @@
     "python.createEnvironment.trigger": "off",
     "workbench.editor.enablePreview": false,
     "comments.thread.confirmOnCollapse": "never",
-    "cursorpyright.disableLanguageServices": true
+    "cursorpyright.disableLanguageServices": true,
+    "window.commandCenter": true
 }

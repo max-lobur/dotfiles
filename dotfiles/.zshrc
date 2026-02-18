@@ -22,9 +22,7 @@ fi
 
 
 export PATH=$PATH:$HOME/git/dotfiles/sh
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
-export PATH="/usr/local/opt/openssl@3/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
+export PATH=/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
 # pyenv
@@ -55,19 +53,8 @@ function diff {
      colordiff -u "$@" | less
 }
 
-# Bash My AWS
-export PATH="$PATH:$HOME/.bash-my-aws/bin"
-source ~/.bash-my-aws/aliases
-autoload -U +X compinit && compinit
-autoload -U +X bashcompinit && bashcompinit
-source ~/.bash-my-aws/bash_completion.sh
-
 # Ansible 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
-# clang
-export LDFLAGS="-L/usr/local/opt/openssl@3/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl@3/include"
 
 # To customize prompt, run `p10k configure` or edit ~/git/dotfiles/dotfiles/.p10k.zsh.
 [[ ! -f ~/git/dotfiles/dotfiles/.p10k.zsh ]] || source ~/git/dotfiles/dotfiles/.p10k.zsh

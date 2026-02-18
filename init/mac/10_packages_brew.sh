@@ -16,6 +16,7 @@ brew install exiftool
 brew install flatbuffers
 brew install git
 brew install git-xargs
+brew install gh
 brew install grpcurl
 brew install --force gettext # envsubst
 brew link --force gettext
@@ -58,6 +59,7 @@ brew install watch
 brew install wget
 brew install zsh
 brew install z
+brew install zoom
 
 #
 ## Casks below

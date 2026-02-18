@@ -76,5 +76,6 @@
     "workbench.editor.enablePreview": false,
     "comments.thread.confirmOnCollapse": "never",
     "cursorpyright.disableLanguageServices": true,
-    "window.commandCenter": true
+    "window.commandCenter": true,
+    "editor.wordWrap": "off"
 }

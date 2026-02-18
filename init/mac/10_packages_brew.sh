@@ -72,6 +72,7 @@ brew install docker-compose
 brew install dropbox
 brew install google-chrome
 brew install iterm2
+brew install meetingbar
 brew install scroll-reverser
 brew install slack
 brew install the-unarchiver

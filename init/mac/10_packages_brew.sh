@@ -31,6 +31,7 @@ brew install iperf
 brew install iperf3
 brew install libgfshare
 brew install make
+brew install uv
 brew install python-yq
 brew install --HEAD jq
 #brew install kafkacat

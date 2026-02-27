@@ -55,7 +55,6 @@ brew install ssh-copy-id
 brew install telnet
 brew install tofuenv
 brew install vim
-brew install volta
 brew install watch
 brew install wget
 brew install zsh

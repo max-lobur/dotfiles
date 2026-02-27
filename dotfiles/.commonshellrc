@@ -6,11 +6,6 @@ export LANG=en_US.UTF-8
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 
-# volta
-export VOLTA_HOME=$HOME/.volta
-export PATH="$VOLTA_HOME/bin:$PATH"
-export VOLTA_FEATURE_PNPM=1
-
 # Go Envs
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"

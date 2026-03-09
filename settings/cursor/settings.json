@@ -77,5 +77,6 @@
     "comments.thread.confirmOnCollapse": "never",
     "cursorpyright.disableLanguageServices": true,
     "window.commandCenter": true,
-    "editor.wordWrap": "off"
+    "editor.wordWrap": "off",
+    "update.mode": "none"
 }

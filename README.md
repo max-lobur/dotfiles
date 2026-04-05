@@ -11,7 +11,7 @@ Zero friction mac and linux bootstrap
 The above color theme is [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
 
 ## How to Use
-1. Clone it / Fork it
+1. Click `Use This Template`, or simply fork the repo. 
 2. Update [vars.sh](./vars.sh)
 3. Review the [init](./init) scripts, enable/disable stuff
 4. Run `./init.sh`

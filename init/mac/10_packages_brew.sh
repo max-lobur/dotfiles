@@ -17,11 +17,8 @@ brew install direnv
 brew install exiftool
 brew install flatbuffers
 brew install git
-brew install git-xargs
 brew install gh
 brew install grpcurl
-brew install --force gettext # envsubst
-brew link --force gettext
 brew install gnu-sed
 brew install gnu-tar
 brew install gpg

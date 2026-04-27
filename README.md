@@ -13,9 +13,9 @@ Easy mac and linux bootstrap
 The above color theme is [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
 
 ## How to Use
-1. Click `Use this template`, or simply Fork the repo. 
+1. Click `Use this template`, or fork the repo 
 2. Update [vars.sh](./vars.sh)
-3. Review the [init](./init) scripts, enable/disable stuff
+3. Review the [init](./init) scripts, enable/disable parts
 4. Run `./init.sh`
 
 ## Troubleshooting

@@ -41,6 +41,7 @@
         "editor.formatOnType": true
     },
     "extensions.ignoreRecommendations": true,
+    "extensions.autoUpdate": false,
     "editor.inlineSuggest.enabled": true,
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.codeLens.authors.enabled": false,

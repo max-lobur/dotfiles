@@ -79,5 +79,6 @@
     "cursorpyright.disableLanguageServices": true,
     "window.commandCenter": true,
     "editor.wordWrap": "off",
-    "window.autoDetectColorScheme": false
+    "window.autoDetectColorScheme": false,
+    "editor.lineNumbers": "off"
 }

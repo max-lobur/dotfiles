@@ -1,0 +1,244 @@
+#!/usr/bin/env python3
+"""
+Staged brew upgrade - only install versions N+ days old.
+Lets packages bake publicly before installing.
+"""
+
+import argparse
+import json
+import os
+import subprocess
+import sys
+import urllib.request
+from dataclasses import dataclass
+from datetime import datetime, timedelta, timezone
+from enum import Enum
+from typing import Any
+
+
+class PkgType(Enum):
+    FORMULA = "formula"
+    CASK = "cask"
+
+
+@dataclass
+class Package:
+    name: str
+    current: str
+    latest: str
+    pkg_type: PkgType
+
+
+@dataclass
+class UpgradeResult:
+    pkg: Package
+    age_days: int | None
+    upgraded: bool
+    reason: str
+
+
+class GitHubAPI:
+    """GitHub API client with optional token auth."""
+
+    def __init__(self, token: str | None = None):
+        self.token = token
+
+    def fetch(self, url: str) -> dict | list | None:
+        headers = {"User-Agent": "brew-staged-upgrade"}
+        if self.token:
+            headers["Authorization"] = f"Bearer {self.token}"
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                return json.loads(resp.read())
+        except urllib.error.URLError as e:
+            print(f"  [warn] API request failed: {e.reason}", file=sys.stderr)
+            return None
+        except json.JSONDecodeError:
+            return None
+
+    def get_commit_date(self, repo: str, paths: list[str]) -> datetime | None:
+        """Get last commit date for first matching path."""
+        for path in paths:
+            url = f"https://api.github.com/repos/{repo}/commits?path={path}&per_page=1"
+            data = self.fetch(url)
+            if data and isinstance(data, list) and len(data) > 0:
+                date_str = data[0]["commit"]["committer"]["date"]
+                return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+        return None
+
+
+def get_gh_token() -> str | None:
+    """Get GitHub token from env or gh CLI."""
+    if token := os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN"):
+        return token
+    try:
+        result = subprocess.run(
+            ["gh", "auth", "token"], capture_output=True, text=True, check=False
+        )
+        if result.returncode == 0:
+            return result.stdout.strip() or None
+    except FileNotFoundError:
+        pass
+    return None
+
+
+def run_brew(args: list[str], check: bool = True) -> str:
+    """Run brew command, return stdout."""
+    result = subprocess.run(
+        ["brew", *args], capture_output=True, text=True, check=check
+    )
+    return result.stdout
+
+
+def get_outdated_packages(pkg_type: PkgType) -> list[Package]:
+    """Get list of outdated packages."""
+    args = ["outdated", "--json"]
+    if pkg_type == PkgType.CASK:
+        args.append("--cask")
+
+    try:
+        output = run_brew(args)
+        data = json.loads(output) if output.strip() else {}
+    except (subprocess.CalledProcessError, json.JSONDecodeError):
+        return []
+
+    key = "casks" if pkg_type == PkgType.CASK else "formulae"
+    packages = []
+    for pkg in data.get(key, []):
+        versions = pkg.get("installed_versions", [])
+        packages.append(
+            Package(
+                name=pkg["name"],
+                current=versions[0] if versions else "?",
+                latest=pkg.get("current_version", "?"),
+                pkg_type=pkg_type,
+            )
+        )
+    return packages
+
+
+def get_package_paths(pkg: Package) -> tuple[str, list[str]]:
+    """Get GitHub repo and possible file paths for package."""
+    if pkg.pkg_type == PkgType.CASK:
+        return "Homebrew/homebrew-cask", [
+            f"Casks/{pkg.name[0]}/{pkg.name}.rb",
+            f"Casks/{pkg.name}.rb",
+        ]
+    else:
+        base = pkg.name.split("@")[0]
+        return "Homebrew/homebrew-core", [
+            f"Formula/{base[0]}/{pkg.name}.rb",
+            f"Formula/{base[:3]}/{pkg.name}.rb",
+            f"Formula/{pkg.name}.rb",
+        ]
+
+
+def process_package(
+    pkg: Package,
+    gh: GitHubAPI,
+    cutoff: datetime,
+    now: datetime,
+    dry_run: bool,
+) -> UpgradeResult:
+    """Check package age and upgrade if old enough."""
+    repo, paths = get_package_paths(pkg)
+    updated_at = gh.get_commit_date(repo, paths)
+
+    if updated_at is None:
+        return UpgradeResult(pkg, None, False, "can't check date")
+
+    age_days = (now - updated_at).days
+
+    if updated_at > cutoff:
+        return UpgradeResult(pkg, age_days, False, "too new")
+
+    if not dry_run:
+        args = ["upgrade", "--quiet"]
+        if pkg.pkg_type == PkgType.CASK:
+            args.append("--cask")
+        args.append(pkg.name)
+        subprocess.run(["brew", *args], check=False)
+
+    return UpgradeResult(pkg, age_days, True, "upgraded")
+
+
+def print_result(result: UpgradeResult, staging_days: int, dry_run: bool) -> None:
+    """Print upgrade result for single package."""
+    pkg = result.pkg
+    prefix = "  "
+    version_info = f"{pkg.current} → {pkg.latest}"
+
+    if result.age_days is None:
+        status = "[SKIP: can't check date]"
+    elif result.upgraded:
+        action = "would upgrade" if dry_run else "upgrading"
+        status = f"[OK: {result.age_days}d old, {action}]"
+    else:
+        status = f"[SKIP: {result.age_days}d old, need {staging_days}d]"
+
+    print(f"{prefix}{pkg.name}: {version_info} {status}")
+
+
+def print_summary(results: list[UpgradeResult], dry_run: bool) -> None:
+    """Print final summary."""
+    upgraded = [r for r in results if r.upgraded]
+    skipped = [r for r in results if not r.upgraded]
+
+    print("\n" + "=" * 40)
+    action = "Would upgrade" if dry_run else "Upgraded"
+    print(f"{action}: {len(upgraded)}, Skipped: {len(skipped)}")
+
+    if upgraded:
+        names = ", ".join(r.pkg.name for r in upgraded)
+        print(f"  {action}: {names}")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="Staged brew upgrade - only install versions N+ days old"
+    )
+    parser.add_argument(
+        "--days", "-d", type=int, default=10, help="Min days since release (default: 10)"
+    )
+    parser.add_argument(
+        "--dry-run", "-n", action="store_true", help="Show what would be upgraded"
+    )
+    args = parser.parse_args()
+
+    staging_days = args.days
+    now = datetime.now(timezone.utc)
+    cutoff = now - timedelta(days=staging_days)
+    gh = GitHubAPI(get_gh_token())
+
+    mode = "[DRY RUN] " if args.dry_run else ""
+    print(f"{mode}Staged upgrade (min age: {staging_days} days)")
+    print("Updating brew...")
+    run_brew(["update", "--quiet"])
+
+    all_results: list[UpgradeResult] = []
+
+    for pkg_type in PkgType:
+        label = "casks" if pkg_type == PkgType.CASK else "formulae"
+        print(f"\nChecking outdated {label}...")
+
+        packages = get_outdated_packages(pkg_type)
+        if not packages:
+            print("  (none)")
+            continue
+
+        for pkg in packages:
+            result = process_package(pkg, gh, cutoff, now, args.dry_run)
+            print_result(result, staging_days, args.dry_run)
+            all_results.append(result)
+
+    if not args.dry_run:
+        print("\nCleaning up...")
+        run_brew(["cleanup", "--quiet"])
+
+    print_summary(all_results, args.dry_run)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

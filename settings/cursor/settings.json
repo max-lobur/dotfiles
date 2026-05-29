@@ -80,5 +80,7 @@
     "window.commandCenter": true,
     "editor.wordWrap": "off",
     "window.autoDetectColorScheme": false,
-    "editor.lineNumbers": "off"
+    "editor.lineNumbers": "off",
+    "update.mode": "none",
+    "update.showReleaseNotes": false
 }

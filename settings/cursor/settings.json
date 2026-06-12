@@ -38,7 +38,8 @@
     "terminal.integrated.copyOnSelection": true,
     "python.analysis.completeFunctionParens": true,
     "[python]": {
-        "editor.formatOnType": true
+        "editor.formatOnType": true,
+        "diffEditor.ignoreTrimWhitespace": true
     },
     "extensions.ignoreRecommendations": true,
     "extensions.autoUpdate": false,

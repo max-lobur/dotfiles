@@ -38,6 +38,7 @@ alias git-log='git log --date=short --pretty=format:"%C(124)%ad %C(24)%h %C(34)%
 alias kb="keybase"
 alias k="kubectl"
 alias kns="kubens"
+alias tailf='tail -f'
 
 
 ### LINUX

@@ -2,8 +2,6 @@
 
 echo " --------------------------- Configuring git --------------------------- "
 git config --global core.excludesfile ~/.gitignore_global
-git config --global user.name "$FULL_NAME"
-git config --global user.email "${EM}"
 git config --global core.editor ${EDITOR}
 git config --global core.filemode true
 git config --global color.ui true
@@ -18,13 +16,6 @@ git config --global init.defaultBranch main
 
 git config --global alias.br "! git for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | sed -e 's-refs/heads/--' | tail"
 
-
-### MAC
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    git config --global gpg.format ssh
-    git config --global user.signingkey ~/.ssh/id_ed25519.pub
-    git config --global commit.gpgSign true
-fi
 
 # check
 echo "Git settings:"

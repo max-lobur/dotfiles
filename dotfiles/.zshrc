@@ -23,6 +23,11 @@ fi
 
 export PATH=$PATH:$HOME/git/dotfiles/sh
 export PATH=/usr/local/bin:$PATH
+
+# Volta shims must precede Homebrew's node (/opt/homebrew/bin/node).
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
 source $ZSH/oh-my-zsh.sh
 alias ll='ls -lah'
 

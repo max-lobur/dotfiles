@@ -64,3 +64,6 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # To customize prompt, run `p10k configure` or edit ~/git/dotfiles/dotfiles/.p10k.zsh.
 [[ ! -f ~/git/dotfiles/dotfiles/.p10k.zsh ]] || source ~/git/dotfiles/dotfiles/.p10k.zsh
+
+# `code .` opens the editor. Without this, Cursor sends a folder open into the Agents window.
+alias code='command code --classic'

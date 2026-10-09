@@ -1,3 +1,5 @@
+anysphere.remote-containers
+anysphere.remote-ssh
 github.github-vscode-theme
 github.vscode-pull-request-github
 hashicorp.terraform

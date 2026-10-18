@@ -214,7 +214,10 @@ def main() -> int:
     mode = "[DRY RUN] " if args.dry_run else ""
     print(f"{mode}Staged upgrade (min age: {staging_days} days)")
     print("Updating brew...")
-    run_brew(["update", "--quiet"])
+    try:
+        run_brew(["update", "--quiet"])
+    except subprocess.CalledProcessError:
+        print("  [warn] brew update failed, continuing anyway...", file=sys.stderr)
 
     all_results: list[UpgradeResult] = []
 
